@@ -1,0 +1,20 @@
+name: Sync
+
+on:
+  # Triggers the workflow on push event
+  push:
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  Sync-to-Gitee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wearerequired/git-mirror-action@v1.2.0
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }} # SSH_PRIVATE_KEY是将私钥添加至GitHub仓库时设置的名称
+        with:
+          source-repo: "git@github.com:vveicc/algorithm-in-action.git"     # 源仓库SSH URL
+          destination-repo: "git@gitee.com:vveicc/algorithm-in-action.git" # 目标仓库SSH URL

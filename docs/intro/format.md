@@ -27,9 +27,14 @@
 ??? info "代码实现"
     === "Go"
         ```go
-        fmt.Println("Hello World")
+        --8<-- "intro/format.go"
         ```
     === "Java"
         ```java
-        System.out.println("Hello, World!");
+        public class Main {
+
+            public static void main(String[] args) {
+                System.out.println("Hello, World!");
+            }
+        }
         ```

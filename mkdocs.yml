@@ -6,6 +6,7 @@ site_author: vveicc
 # Repository
 repo_name: vveicc/algorithm-in-action
 repo_url: https://github.com/vveicc/algorithm-in-action
+edit_uri: edit/main/docs/
 
 # Copyright
 copyright: Copyright &copy; 2015 - 2023 VVEICC
@@ -83,6 +84,9 @@ plugins:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - minify:
       minify_html: true
+  - git-revision-date-localized:
+      enable_creation_date: false
+      type: date
 
 # Extensions
 markdown_extensions:
@@ -125,6 +129,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.snippets:
+      base_path: docs
 
 # Customization
 extra:
