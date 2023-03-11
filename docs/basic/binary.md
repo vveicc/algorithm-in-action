@@ -18,11 +18,11 @@
 ??? info "解题思路"
     === "Go"
         ```go
-        --8<-- "basic/binary/binary/go/cf1379c.go"
+        --8<-- "binary/binary/go/cf1379c.go"
         ```
     === "Java"
         ```java
-        --8<-- "basic/binary/binary/java/cf1379c/Main.java"
+        --8<-- "binary/binary/java/cf1379c/Main.java"
         ```
 
 ## 三分法

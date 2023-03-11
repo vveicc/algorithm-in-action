@@ -25,11 +25,11 @@
 
     === "Go"
         ```go
-        --8<-- "basic/prefix-sum/ps/go/cf1552d.go"
+        --8<-- "prefix-sum/ps/go/cf1552d.go"
         ```
     === "Java"
         ```java
-        --8<-- "basic/prefix-sum/ps/java/cf1552d/Main.java"
+        --8<-- "prefix-sum/ps/java/cf1552d/Main.java"
         ```
 
 ## 差分

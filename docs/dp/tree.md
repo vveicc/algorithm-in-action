@@ -23,11 +23,11 @@
 
     === "Go"
         ```go
-        --8<-- "dp/tree/root-changing/go/cf219d.go"
+        --8<-- "tree/root-changing/go/cf219d.go"
         ```
     === "Java"
         ```java
-        --8<-- "dp/tree/root-changing/java/cf219d/Main.java"
+        --8<-- "tree/root-changing/java/cf219d/Main.java"
         ```
 
 ### CF337D: Book of Evil
@@ -44,9 +44,9 @@
 ??? info "解题思路"
     === "Go"
         ```go
-        --8<-- "dp/tree/root-changing/go/cf337d.go"
+        --8<-- "tree/root-changing/go/cf337d.go"
         ```
     === "Java"
         ```java
-        --8<-- "dp/tree/root-changing/java/cf337d/Main.java"
+        --8<-- "tree/root-changing/java/cf337d/Main.java"
         ```

@@ -21,9 +21,9 @@
 
     === "Go"
         ```go
-        --8<-- "dp/knapsack/group/go/cf148e.go"
+        --8<-- "knapsack/group/go/cf148e.go"
         ```
     === "Java"
         ```java
-        --8<-- "dp/knapsack/group/java/cf148e/Main.java"
+        --8<-- "knapsack/group/java/cf148e/Main.java"
         ```

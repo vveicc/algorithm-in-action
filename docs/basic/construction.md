@@ -19,7 +19,7 @@
     从高位到低位按位构造，对于第 $i$ 位，有以下四种情况：
     
     | $n_i$ | $k_i$ | 如何处理能够保证 $n \oplus x ≥ k$ 且 $x$ 最小？|
-    | :-: | :-: | :--- |
+    | :-: | :-: | :--------- |
     | 0 | 0 | 将 $x_i$ 赋为 0 |
     | 1 | 1 | 将 $x_i$ 赋为 0 |
     | 0 | 1 | 将 $x_i$ 赋为 1 ，如果赋为 0 将会导致 $n \oplus x < k$ |
@@ -27,11 +27,11 @@
 
     === "Go"
         ```go
-        --8<-- "basic/construction/go/cf1554c_1.go"
+        --8<-- "construction/go/cf1554c_1.go"
         ```
     === "Java"
         ```java
-        --8<-- "basic/construction/java/cf1554c_1/Main.java"
+        --8<-- "construction/java/cf1554c_1/Main.java"
         ```
 
 ??? info "解题思路（二）"
@@ -44,7 +44,7 @@
     对于 $x$ 的每一个二进制位，有以下四种情况：
 
     | $n_i$ | $m_i$ | 如何修改 $x$ 能够增大 $n \oplus x$ 且保证 $x$ 最小？|
-    | :-: | :-: | :--- |
+    | :-: | :-: | :--------- |
     | 0 | 1 | 不能修改 $x_i$ ，将 $x_i$ 改为 0 会导致 $n \oplus x$ 减小 |
     | 1 | 1 | 不能修改 $x_i$ ，将 $x_i$ 改为 1 会导致 $n \oplus x$ 减小 |
     | 1 | 0 | 将 $x_i$ 改为 0 能够增大 $n \oplus x$ ，同时导致 $x$ 减小，为了使 $x$ 最小，需要修改该情况的最高位，并将其后低位全部置 0 |
@@ -54,9 +54,9 @@
 
     === "Go"
         ```go
-        --8<-- "basic/construction/go/cf1554c_2.go"
+        --8<-- "construction/go/cf1554c_2.go"
         ```
     === "Java"
         ```java
-        --8<-- "basic/construction/java/cf1554c_2/Main.java"
+        --8<-- "construction/java/cf1554c_2/Main.java"
         ```

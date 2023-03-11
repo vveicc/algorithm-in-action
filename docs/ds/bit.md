@@ -12,9 +12,9 @@
 ??? info "解题思路"
     === "Go"
         ```go
-        --8<-- "ds/bit/go/cf652d.go"
+        --8<-- "bit/go/cf652d.go"
         ```
     === "Java"
         ```java
-        --8<-- "ds/bit/java/cf652d/Main.java"
+        --8<-- "bit/java/cf652d/Main.java"
         ```

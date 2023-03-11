@@ -31,11 +31,11 @@
 
     === "Go"
         ```go
-        --8<-- "dp/basic/two-dimensional/min-cost/go/cf1525d.go"
+        --8<-- "basic/two-dimensional/min-cost/go/cf1525d.go"
         ```
     === "Java"
         ```java
-        --8<-- "dp/basic/two-dimensional/min-cost/java/cf1525d/Main.java"
+        --8<-- "basic/two-dimensional/min-cost/java/cf1525d/Main.java"
         ```
 
 #### LC2463: 最小移动总距离
@@ -52,8 +52,8 @@
     机器人从位置 $x$ 到位置 $y$ 的移动距离为 $|x-y|$ 。<br>
     问所有机器人都进入工厂维修的移动距离总和最小是多少？测试数据保证所有机器人都可以被维修。<br>
 
-    在 [LeetCode主站](https://leetcode.com/problems/minimum-total-distance-traveled/ "Hard")
-    或 [力扣中文社区](https://leetcode.cn/problems/minimum-total-distance-traveled/ "困难：2454") 上查看该题。
+    在 [LeetCode主站](https://leetcode.com/problems/minimum-total-distance-traveled "Hard")
+    或 [力扣中文社区](https://leetcode.cn/problems/minimum-total-distance-traveled "困难：2454") 上查看该题。
 
     如果觉得这题比较难，可以先做简单版：[CF1525D: Armchairs](#cf1525d-armchairs)。
 
@@ -65,5 +65,5 @@
 
     === "Go"
         ```go
-        --8<-- "dp/basic/two-dimensional/min-cost/go/lc2463.go"
+        --8<-- "basic/two-dimensional/min-cost/go/lc2463.go"
         ```

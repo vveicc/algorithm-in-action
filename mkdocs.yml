@@ -27,6 +27,8 @@ nav:
     - 动态规划基础: dp/basic.md
     - 背包 DP: dp/knapsack.md
     - 树形 DP: dp/tree.md
+  - 数学:
+    - 二进制集合操作: math/binary-set.md
 
 # Configuration
 theme:
@@ -47,7 +49,7 @@ theme:
     - navigation.footer
     - navigation.top
     - search.suggest
-    - search.highlight
+    # - search.highlight
     - search.share
     - toc.follow
   palette:
@@ -143,7 +145,7 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - pymdownx.snippets:
-      base_path: code
+      base_path: ['code', 'code/basic', 'code/ds', 'code/dp', 'code/math']
 
 # Customization
 extra:
