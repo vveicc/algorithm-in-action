@@ -29,6 +29,8 @@ nav:
     - 树形 DP: dp/tree.md
   - 数学:
     - 二进制集合操作: math/binary-set.md
+  - 图论:
+    - 最短路: graph/shortest-path.md
 
 # Configuration
 theme:
@@ -145,7 +147,7 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - pymdownx.snippets:
-      base_path: ['code', 'code/basic', 'code/ds', 'code/dp', 'code/math']
+      base_path: ['code', 'code/basic', 'code/ds', 'code/dp', 'code/math', 'code/graph']
 
 # Customization
 extra:

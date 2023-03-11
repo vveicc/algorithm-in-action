@@ -9,8 +9,8 @@
     在 [Codeforces](https://codeforces.com/problemset/problem/1554/C "1800")
     或 [洛谷](https://www.luogu.com.cn/problem/CF1554C "普及/提高-") 上查看该题。
 
-??? info "解题思路（一）"
-    **从高到低按位构造**
+??? info "解题思路"
+    **方法一：从高到低按位构造**
     
     根据题意，需要找到最小的 $x$ ，使得 $n \oplus x > m$ 。<br>
     显然，当 $n > m$ 时，答案为 0 。<br>
@@ -34,8 +34,7 @@
         --8<-- "construction/java/cf1554c_1/Main.java"
         ```
 
-??? info "解题思路（二）"
-    **基于 $n \oplus m$ 构造**
+    **方法二：基于 $n \oplus m$ 构造**
     
     根据题意，需要找到最小的 $x$ ，使得 $n \oplus x > m$ 。<br>
     显然，当 $n > m$ 时，答案为 0 。<br>
