@@ -14,6 +14,12 @@
     在 [Codeforces](https://codeforces.com/problemset/problem/219/D "1700")
     或 [洛谷](https://www.luogu.com.cn/problem/CF219D "普及+/提高") 查看该题。
 
+??? tip "解题思路"
+    先通过 DFS 计算出以 $1$ 为根的反向边数量。<br>
+    然后进行换根 DP，假设以 $x$ 为根的反向边数量为 $n$ ，考虑与 $x$ 相连的节点 $y$ ：<br>
+    1. 如果 $x \to y$ ，则以 $y$ 为根的反向边数量为 $n+1$ ；<br>
+    2. 如果 $x \gets y$ ，则以 $y$ 为根的反向边数量为 $n-1$ 。
+
 ??? info "代码实现"
     === "Go"
         ```go
