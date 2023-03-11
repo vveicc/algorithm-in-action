@@ -9,7 +9,7 @@
     在 [Codeforces](https://codeforces.com/problemset/problem/652/D "1800")
     或 [洛谷](https://www.luogu.com.cn/problem/CF652D "普及+/提高") 上查看该题。
 
-??? info "代码实现"
+??? info "解题思路"
     === "Go"
         ```go
         --8<-- "ds/bit/go/cf652d.go"

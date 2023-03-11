@@ -24,6 +24,7 @@ nav:
     - 单调栈: ds/monotonous-stack.md
     - 树状数组: ds/bit.md
   - 动态规划:
+    - 动态规划基础: dp/basic.md
     - 背包 DP: dp/knapsack.md
     - 树形 DP: dp/tree.md
 
@@ -107,6 +108,9 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:

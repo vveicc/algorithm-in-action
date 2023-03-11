@@ -9,7 +9,7 @@
     在 [Codeforces](https://codeforces.com/problemset/problem/1554/C "1800")
     或 [洛谷](https://www.luogu.com.cn/problem/CF1554C "普及/提高-") 上查看该题。
 
-??? tip "解题思路（一）"
+??? info "解题思路（一）"
     **从高到低按位构造**
     
     根据题意，需要找到最小的 $x$ ，使得 $n \oplus x > m$ 。<br>
@@ -25,7 +25,6 @@
     | 0 | 1 | 将 $x_i$ 赋为 1 ，如果赋为 0 将会导致 $n \oplus x < k$ |
     | 1 | 0 | 将 $x_i$ 赋为 0 ，此时已经能保证 $n \oplus x ≥ k$，为了使 $x$ 最小，需要将剩余的二进制位全部赋为 0 |
 
-??? info "代码实现（一）"
     === "Go"
         ```go
         --8<-- "basic/construction/go/cf1554c_1.go"
@@ -35,7 +34,7 @@
         --8<-- "basic/construction/java/cf1554c_1/Main.java"
         ```
 
-??? tip "解题思路（二）"
+??? info "解题思路（二）"
     **基于 $n \oplus m$ 构造**
     
     根据题意，需要找到最小的 $x$ ，使得 $n \oplus x > m$ 。<br>
@@ -53,7 +52,6 @@
 
     注意，第三种情况是最优的，但可能不存在这种情况，此时需要通过第四种情况修改 $x$ 。
 
-??? info "代码实现（二）"
     === "Go"
         ```go
         --8<-- "basic/construction/go/cf1554c_2.go"

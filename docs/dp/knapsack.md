@@ -14,12 +14,11 @@
     在 [Codeforces](https://codeforces.com/problemset/problem/148/E "1900")
     或 [洛谷](https://www.luogu.com.cn/problem/CF148E "提高+/省选-") 查看该题。
 
-??? tip "解题思路"
+??? info "解题思路"
     定义 $groups[i][j]$ 表示从第 $i$ 个 dq 中取出 $j+1$ 个数的最大和。<br>
     预处理每一个 dq ，枚举在队头取出的数字个数，通过前缀和计算得到 $groups[i][j]$ 。<br>
     预处理得到 $groups[i][j]$ 后，问题转化为背包容量为 $m$ 的分组背包问题。
 
-??? info "代码实现"
     === "Go"
         ```go
         --8<-- "dp/knapsack/group/go/cf148e.go"
