@@ -1,7 +1,5 @@
 # 树状数组
 
-在 OI Wiki 上学习 [树状数组](https://oi-wiki.org/ds/fenwick)。
-
 ## CF652D: Nested Segments
 
 ???+ note "问题描述"

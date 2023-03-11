@@ -17,6 +17,7 @@ nav:
     - 关于本站: index.md
     - 格式说明: intro/format.md
   - 算法基础:
+    - 前缀和 & 差分: basic/prefix-sum.md
     - 二分: basic/binary.md
     - 构造: basic/construction.md
   - 数据结构:

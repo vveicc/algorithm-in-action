@@ -1,7 +1,5 @@
 # 二分
 
-在 OI Wiki 上学习 [二分](https://oi-wiki.org/basic/binary)。
-
 ## 二分法
 
 ### CF1379C: Choosing flowers
