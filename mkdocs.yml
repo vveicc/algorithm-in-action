@@ -16,6 +16,13 @@ nav:
   - 简介:
     - 关于本站: index.md
     - 格式说明: intro/format.md
+  - 算法基础:
+    - 二分: basic/binary.md
+  - 数据结构:
+    - 树状数组: ds/bit.md
+  - 动态规划:
+    - 背包 DP: dp/knapsack.md
+    - 树形 DP: dp/tree.md
 
 # Configuration
 theme:
@@ -30,7 +37,6 @@ theme:
     - content.code.annotate
     - content.tabs.link
     - content.tooltips
-    - navigation.instant
     - navigation.tabs
     - navigation.sections
     - navigation.expand
@@ -130,7 +136,7 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - pymdownx.snippets:
-      base_path: docs
+      base_path: code
 
 # Customization
 extra:

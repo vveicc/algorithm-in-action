@@ -27,7 +27,13 @@
 ??? info "代码实现"
     === "Go"
         ```go
-        --8<-- "intro/format.go"
+        package main
+
+        import "fmt"
+
+        func main() {
+            fmt.Println("Hello, World!")
+        }
         ```
     === "Java"
         ```java
