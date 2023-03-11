@@ -9,7 +9,7 @@ repo_url: https://github.com/vveicc/algorithm-in-action
 edit_uri: edit/main/docs/
 
 # Copyright
-copyright: Copyright &copy; 2015 - 2023 VVEICC
+copyright: 2015-2023 &copy; VVEICC
 
 # Contents
 nav:
@@ -19,6 +19,7 @@ nav:
   - 算法基础:
     - 二分: basic/binary.md
   - 数据结构:
+    - 单调栈: ds/monotonous-stack.md
     - 树状数组: ds/bit.md
   - 动态规划:
     - 背包 DP: dp/knapsack.md
@@ -140,6 +141,8 @@ markdown_extensions:
 
 # Customization
 extra:
+  annotate:
+    json: [.s2]
   social:
     - icon: simple/leetcode
       link: https://leetcode.cn/u/vveicc

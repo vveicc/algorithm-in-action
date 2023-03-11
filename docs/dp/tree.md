@@ -11,7 +11,8 @@
     定义 $f(x)$ 表示以 $x$ 为根时，要让 $x$ 能够到达任意点，需要反向的边的数量。<br>
     第一行输出 $min(f(x))$，第二行升序输出所有等于 $min(f(x))$ 的节点编号。
 
-    在 [Codeforces](https://codeforces.com/problemset/problem/219/D) 或 [洛谷](https://www.luogu.com.cn/problem/CF219D) 查看该题。
+    在 [Codeforces](https://codeforces.com/problemset/problem/219/D "1700")
+    或 [洛谷](https://www.luogu.com.cn/problem/CF219D "普及+/提高") 查看该题。
 
 ??? info "代码实现"
     === "Go"
@@ -21,4 +22,25 @@
     === "Java"
         ```java
         --8<-- "dp/tree/root-changing/java/cf219d/Main.java"
+        ```
+
+### CF337D: Book of Evil
+
+???+ note "问题描述"
+    输入 $n\ m(1≤m≤n≤1e5)\ d(0≤d≤n-1)$ 表示一棵 $n$ 个节点的树，其中 $m$ 个节点有怪物，这些怪物是由一个传送门生成的，传送门与任意怪物的距离不超过 $d$。<br>
+    然后输入 $m$ 个互不相同的数，表示怪物所在节点编号（从 $1$ 开始）。<br>
+    然后输入 $n-1$ 行，每行两个节点编号，表示树的边。<br>
+    输出可能存在传送门的节点的个数。注意传送门只有一个。
+
+    在 [Codeforces](https://codeforces.com/problemset/problem/337/D "2000")
+    或 [洛谷](https://www.luogu.com.cn/problem/CF337D "提高+/省选-") 查看该题。
+
+??? info "代码实现"
+    === "Go"
+        ```go
+        --8<-- "dp/tree/root-changing/go/cf337d.go"
+        ```
+    === "Java"
+        ```java
+        --8<-- "dp/tree/root-changing/java/cf337d/Main.java"
         ```

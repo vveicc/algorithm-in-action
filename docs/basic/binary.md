@@ -14,7 +14,8 @@
     如果第 $i$ 种物品选 $x(x>0)$ 个，收益为 $a[i]+(x-1)*b[i]$。<br>
     输出最大收益。
     
-    在 [Codeforces](https://codeforces.com/problemset/problem/1379/C) 或 [洛谷](https://www.luogu.com.cn/problem/CF1379C) 上查看该题。
+    在 [Codeforces](https://codeforces.com/problemset/problem/1379/C "2000")
+    或 [洛谷](https://www.luogu.com.cn/problem/CF1379C "提高+/省选-") 上查看该题。
 
 ??? info "代码实现"
     === "Go"

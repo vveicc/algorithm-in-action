@@ -10,32 +10,6 @@ public class Main {
     static List<Integer> xs = new ArrayList<>();
     static int min;
 
-    public static int dfs1(int x, int fa) {
-        int count = 0;
-        for (int y : ug[x]) {
-            if ((y >> 1) != fa) {
-                count += (y & 1) + dfs1(y >> 1, x);
-            }
-        }
-        return count;
-    }
-
-    public static void dfs(int x, int fa, int c) {
-        if (c < min) {
-            min = c;
-            xs.clear();
-            xs.add(x);
-        } else if (c == min) {
-            xs.add(x);
-        }
-        for (int y : ug[x]) {
-            if ((y >> 1) != fa) {
-                // 如果x->y为正向，则以节点y为根时，需要反向的边的数量+1；如果为反向则-1
-                dfs(y >> 1, x, c - ((y & 1) << 1) + 1);
-            }
-        }
-    }
-
     public static void main(String[] args) throws Exception {
         int n = Integer.parseInt(in.readLine());
         ug = new List[n + 1];
@@ -61,5 +35,31 @@ public class Main {
         out.flush();
         out.close();
         in.close();
+    }
+
+    public static int dfs1(int x, int fa) {
+        int count = 0;
+        for (int y : ug[x]) {
+            if ((y >> 1) != fa) {
+                count += (y & 1) + dfs1(y >> 1, x);
+            }
+        }
+        return count;
+    }
+
+    public static void dfs(int x, int fa, int c) {
+        if (c < min) {
+            min = c;
+            xs.clear();
+            xs.add(x);
+        } else if (c == min) {
+            xs.add(x);
+        }
+        for (int y : ug[x]) {
+            if ((y >> 1) != fa) {
+                // 如果x->y为正向，则以节点y为根时，需要反向的边的数量+1；如果为反向则-1
+                dfs(y >> 1, x, c - ((y & 1) << 1) + 1);
+            }
+        }
     }
 }
