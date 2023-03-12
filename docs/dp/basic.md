@@ -67,3 +67,21 @@
         ```go
         --8<-- "basic/two-dimensional/min-cost/go/lc2463.go"
         ```
+
+#### LC1478: 安排邮筒
+
+???+ note "问题描述"
+    给你一个长度为 $n([1,100])$ 的房屋数组 $houses$ 和一个整数 $k(1≤k≤n)$ 。<br>
+    其中 $houses[i]([1,1e4])$ 是第 $i$ 栋房子在一条街上的位置，现需要在这条街上安排 $k$ 个邮筒。<br>
+    请你返回每栋房子与离它最近的邮筒之间的距离的最小总和。
+
+    在 [LeetCode主站](https://leetcode.com/problems/allocate-mailboxes "Hard")
+    或 [力扣中文社区](https://leetcode.cn/problems/allocate-mailboxes "困难：2190") 上查看该题。
+
+??? info "解题思路"
+    给一组房屋安排一个邮筒，选择房屋的中位数作为目标点，距离总和最小。
+
+    === "Go"
+        ```go
+        --8<-- "basic/two-dimensional/min-cost/go/lc1478.go"
+        ```
