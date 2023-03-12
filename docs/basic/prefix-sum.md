@@ -2,6 +2,34 @@
 
 ## 前缀和
 
+### LC1124: 表现良好的最长时间段
+
+???+ note "问题描述"
+    长度为 $n(1≤n≤10^4)$ 的工作时间表 $hours$ ，记录着某位员工每天的工作小时数。
+    我们认为当员工一天中的工作小时数大于 8 小时的时候，那么这一天就是「劳累的一天」。
+    所谓「表现良好的时间段」，意味在这段时间内，「劳累的天数」严格大于「不劳累的天数」。
+    请你返回「表现良好时间段」的最大长度。
+
+    在 [LeetCode主站](https://leetcode.com/problems/longest-well-performing-interval "Medium")
+    或 [力扣中文社区](https://leetcode.cn/problems/longest-well-performing-interval "中等：1908") 上查看该题。
+
+??? info "解题思路"
+    **方法一：前缀和 + 哈希表**
+
+    === "Go"
+        ```go
+        --8<-- "prefix-sum/ps/go/lc1124_1.go"
+        ```
+    
+    **方法二：前缀和 + 单调栈**
+
+    进阶：如果数组中的值不只有 $1$ 和 $-1$，那么如何计算和至少为 $k$ 的最长子数组？
+
+    === "Go"
+        ```go
+        --8<-- "prefix-sum/ps/go/lc1124_2.go"
+        ```
+
 ### CF1552D: Array Differentiation
 
 ???+ note "问题描述"
