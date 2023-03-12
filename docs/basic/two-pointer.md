@@ -18,3 +18,18 @@
         ```go
         --8<-- "two-pointer/sliding-window/go/lc2379.go"
         ```
+
+### LC713: 乘积小于 K 的子数组
+
+???+ note "问题描述"
+    给你一个长度为 $n(1≤n≤3e4)$ 的整数数组 $nums(1≤nums[i]≤1e3)$ 和一个整数 $k(0≤k≤1e6)$ 。<br>
+    请你返回子数组内所有元素的乘积严格小于 $k$ 的连续子数组的数目。
+
+    在 [LeetCode主站](https://leetcode.com/problems/subarray-product-less-than-k "Medium")
+    或 [力扣中文社区](https://leetcode.cn/problems/subarray-product-less-than-k "中等") 上查看该题。
+
+??? info "解题思路"
+    === "Go"
+        ```go
+        --8<-- "two-pointer/sliding-window/go/lc713.go"
+        ```
