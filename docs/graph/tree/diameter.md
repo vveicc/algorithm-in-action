@@ -3,9 +3,9 @@
 ## LC1617: 统计子树中城市之间最大距离
 
 ???+ note "问题描述"
-    给你 $n(2≤n≤15)$ 个城市，编号从 $1$ 到 $n$ 。
-    给你一个长度为 $n-1$ 的数组 $edges$ ，其中 $edges[i]=[u_i,v_i]$ 表示城市 $u_i$ 和 $v_i$ 之间有一条双向边。
-    题目保证所有城市形成一棵树。
+    给你 $n(2≤n≤15)$ 个城市，编号从 $1$ 到 $n$ 。<br>
+    给你一个长度为 $n-1$ 的数组 $edges$ ，其中 $edges[i]=[u_i,v_i]$ 表示城市 $u_i$ 和 $v_i$ 之间有一条双向边。<br>
+    题目保证所有城市形成一棵树。<br>
     请你返回一个大小为 $n-1$ 的数组，其中第 $d$ 个元素（从 $1$ 开始）是城市间最大距离恰好等于 $d$ 的子树数目。
 
     在 [LeetCode主站](https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities "Hard")

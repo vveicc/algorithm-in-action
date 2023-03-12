@@ -4,7 +4,8 @@
 
 ???+ note "问题描述"
     输入 $t(≤3e4)$ 表示 $t$ 组数据，每组数据输入两个整数 $n$ 和 $m$，均在 $[0, 1e9]$ 范围内。<br>
-    定义数组 $a = [n \oplus 0, n \oplus 1, n \oplus 2, ..., n \oplus m]$。<br>输出不在 $a$ 中的最小非负整数。
+    定义数组 $a = [n \oplus 0, n \oplus 1, n \oplus 2, ..., n \oplus m]$。<br>
+    输出不在 $a$ 中的最小非负整数。
 
     在 [Codeforces](https://codeforces.com/problemset/problem/1554/C "1800")
     或 [洛谷](https://www.luogu.com.cn/problem/CF1554C "普及/提高-") 上查看该题。
