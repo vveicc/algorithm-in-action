@@ -17,9 +17,13 @@ nav:
     - 关于本站: index.md
     - 格式说明: intro/format.md
   - 算法基础:
+    - 枚举: basic/enumerate.md
+    - 模拟: basic/simulate.md
+    - 递归 & 分治: basic/divide-and-conquer.md
     - 前缀和 & 差分: basic/prefix-sum.md
     - 二分: basic/binary.md
     - 构造: basic/construction.md
+    - 双指针: basic/two-pointer.md
   - 数据结构:
     - 单调栈: ds/monotonous-stack.md
     - 树状数组: ds/bit.md
