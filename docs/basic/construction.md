@@ -60,3 +60,28 @@
         ```java
         --8<-- "construction/java/cf1554c_2/Main.java"
         ```
+
+## CF1304D: Shortest and Longest LIS
+
+???+ note "问题描述"
+    输入 $t(1≤t≤1e4)$ 表示 $t$ 组数据。所有数据的 $n$ 之和 $≤2e5$。<br>
+    每组数据输入 $n(2≤n≤2e5)$ 和长为 $n-1$ 的字符串 $s$，仅包含 '<' 和 '>'。
+    
+    * $s[i]$ = '<' 表示 $a[i]<a[i+1]$ ；
+    * $s[i]$ = '>' 表示 $a[i]>a[i+1]$ 。
+    
+    请构造两个 $1$ ~ $n$ 的排列，符合字符串 $s$，且第一个数组的 LIS 最短，第二个数组的 LIS 最长。<br>
+    如果有多种构造方案，输出任意一种。
+
+    在 [Codeforces](https://codeforces.com/problemset/problem/1304/D "1800")
+    或 [洛谷](https://www.luogu.com.cn/problem/CF1304D "普及/提高-") 上查看该题。
+
+??? info "解题思路"
+    === "Go"
+        ```go
+        --8<-- "construction/go/cf1304d.go"
+        ```
+    === "Java"
+        ```java
+        --8<-- "construction/java/cf1304d/Main.java"
+        ```
