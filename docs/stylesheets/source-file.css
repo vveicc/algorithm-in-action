@@ -1,0 +1,24 @@
+.md-source-file {
+    margin: 1em 0;
+}
+
+[dir=ltr] .md-source-file__fact {
+    margin-right: .6rem;
+}
+
+.md-source-file__fact {
+    align-items: center;
+    color: var(--md-default-fg-color--light);
+    display: inline-flex;
+    font-size: .68rem;
+    gap: .3rem;
+}
+
+.md-source-file__fact .md-icon {
+    flex-shrink: 0;
+    margin-bottom: .05rem;
+}
+
+.md-source-file__fact svg {
+    width: .9rem;
+}

@@ -41,6 +41,7 @@ nav:
 # Configuration
 theme:
   name: material
+  custom_dir: .overrides
   language: zh
   features:
     - announce.dismiss
@@ -105,8 +106,8 @@ plugins:
   - minify:
       minify_html: true
   - git-revision-date-localized:
-      enable_creation_date: false
-      type: date
+      enable_creation_date: true
+      type: timeago # date
 
 # Extensions
 markdown_extensions:
@@ -164,6 +165,9 @@ extra:
       link: https://leetcode.cn/u/vveicc
     - icon: fontawesome/brands/github
       link: https://github.com/vveicc
+
+extra_css:
+  - stylesheets/source-file.css
 
 extra_javascript:
   - javascripts/link.js
