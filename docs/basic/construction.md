@@ -74,7 +74,7 @@
     如果有多种构造方案，输出任意一种。
 
     在 [Codeforces](https://codeforces.com/problemset/problem/1304/D "1800")
-    或 [洛谷](https://www.luogu.com.cn/problem/CF1304D "普及/提高-") 上查看该题。
+    或 [洛谷](https://www.luogu.com.cn/problem/CF1304D "普及+/提高") 上查看该题。
 
 ??? info "解题思路"
     === "Go"
