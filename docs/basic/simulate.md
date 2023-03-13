@@ -3,9 +3,9 @@
 ## LC43: 字符串相乘
 
 ???+ note "问题描述"
-    给定两个以字符串形式表示的非负整数 $num1$ 和 $num2$ ，字符串长度范围：$[1,200]$ 。<br>
-    $num1$ 和 $num2$ 都不包含任何前导零，除了数字 $0$ 本身。<br>
-    返回 $num1$ 和 $num2$ 的乘积，以字符串形式表示。
+    给定两个以字符串形式表示的非负整数 `num1` 和 `num2` ，字符串长度范围：`[1,200]` 。<br>
+    `num1` 和 `num2` 都不包含任何前导零，除了数字 `0` 本身。<br>
+    返回 `num1` 和 `num2` 的乘积，以字符串形式表示。
 
     在 [LeetCode主站](https://leetcode.com/problems/multiply-strings "Medium")
     或 [力扣中文社区](https://leetcode.cn/problems/multiply-strings "中等") 上查看该题。
@@ -29,8 +29,8 @@
 
 ???+ note "问题描述"
     共有 $k$ 位工人计划将 $n$ 个箱子从旧仓库移动到新仓库。<br>
-    给你两个整数 $n([1,1e4])$ 和 $k([1,1e4])$，以及一个二维整数数组 $time$ ，数组的大小为 $k * 4$ 。<br>
-    其中 $time[i] = [leftToRight_i, pickOld_i, rightToLeft_i, putNew_i]$ 且 $1≤time[i][j]≤1e3$ 。
+    给你两个整数 $n(1≤n≤1e4)$ 和 $k(1≤k≤1e4)$，以及一个二维整数数组 $time$ ，数组的大小为 $k * 4$ 。<br>
+    其中 $time[i] = [leftToRight_i,\ pickOld_i,\ rightToLeft_i,\ putNew_i]$ 且 $1≤time[i][j]≤1e3$ 。
 
     ??? quote "箱子搬运规则"
         一条河将两座仓库分隔，只能通过一座桥通行。旧仓库位于河的右岸，新仓库在河的左岸。<br>

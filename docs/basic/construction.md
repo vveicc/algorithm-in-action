@@ -3,7 +3,7 @@
 ## CF1554C: Mikasa
 
 ???+ note "问题描述"
-    输入 $t(≤3e4)$ 表示 $t$ 组数据，每组数据输入两个整数 $n$ 和 $m$，均在 $[0, 1e9]$ 范围内。<br>
+    输入 $t(1≤t≤3e4)$ 表示 $t$ 组数据，每组数据输入两个整数 $n$ 和 $m$，均在 $[0,1e9]$ 范围内。<br>
     定义数组 $a = [n \oplus 0, n \oplus 1, n \oplus 2, ..., n \oplus m]$。<br>
     输出不在 $a$ 中的最小非负整数。
 
@@ -61,20 +61,43 @@
         --8<-- "construction/java/cf1554c_2/Main.java"
         ```
 
+## LC2375: 根据模式串构造最小数字
+
+???+ note "问题描述"
+    给你下标从 `0` 开始、长度为 `n(1≤n≤8)` 的字符串 `pattern` ，只包含 `'I'` 和 `'D'` 。<br>
+    你需要构造一个下标从 `0` 开始长度为 `n + 1` 的字符串，且它要满足以下条件：
+
+    * `num` 包含数字 `'1'` 到 `'9'` ，其中每个数字 至多 使用一次。
+    * 如果 `pattern[i] == 'I'` ，那么 `num[i] < num[i + 1]` 。
+    * 如果 `pattern[i] == 'D'` ，那么 `num[i] > num[i + 1]` 。
+    
+    请你返回满足上述条件字典序最小的字符串 `num` 。
+
+    在 [LeetCode主站](https://leetcode.com/problems/construct-smallest-number-from-di-string "Medium")
+    或 [力扣中文社区](https://leetcode.cn/problems/construct-smallest-number-from-di-string "中等：1642") 上查看该题。
+
+??? info "解题思路"
+    === "Go"
+        ```go
+        --8<-- "construction/go/lc2375.go"
+        ```
+
 ## CF1304D: Shortest and Longest LIS
 
 ???+ note "问题描述"
     输入 $t(1≤t≤1e4)$ 表示 $t$ 组数据。所有数据的 $n$ 之和 $≤2e5$。<br>
-    每组数据输入 $n(2≤n≤2e5)$ 和长为 $n-1$ 的字符串 $s$，仅包含 '<' 和 '>'。
+    每组数据输入 $n(2≤n≤2e5)$ 和长为 $n-1$ 的字符串 $s$，仅包含 `'<'` 和 `'>'`。
     
-    * $s[i]$ = '<' 表示 $a[i]<a[i+1]$ ；
-    * $s[i]$ = '>' 表示 $a[i]>a[i+1]$ 。
+    * `s[i] = '<'` 表示 `a[i] < a[i+1]` ；
+    * `s[i] = '>'` 表示 `a[i] > a[i+1]` 。
     
     请构造两个 $1$ ~ $n$ 的排列，符合字符串 $s$，且第一个数组的 LIS 最短，第二个数组的 LIS 最长。<br>
     如果有多种构造方案，输出任意一种。
 
     在 [Codeforces](https://codeforces.com/problemset/problem/1304/D "1800")
     或 [洛谷](https://www.luogu.com.cn/problem/CF1304D "普及+/提高") 上查看该题。
+
+    如果觉得这题比较难，可以先做简单版：[LC2375: 根据模式串构造最小数字](#lc2375-根据模式串构造最小数字)。
 
 ??? info "解题思路"
     === "Go"
