@@ -22,6 +22,7 @@ nav:
     - 递归 & 分治: basic/divide-and-conquer.md
     - 前缀和 & 差分: basic/prefix-sum.md
     - 二分: basic/binary.md
+    - 贪心: basic/greedy.md
     - 构造: basic/construction.md
     - 双指针: basic/two-pointer.md
   - 数据结构:

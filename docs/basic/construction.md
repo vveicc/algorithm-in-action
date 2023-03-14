@@ -108,3 +108,25 @@
         ```java
         --8<-- "construction/java/cf1304d/Main.java"
         ```
+
+## CF1156B: Ugly Pairs
+
+???+ note "问题描述"
+    输入 $t(1≤t≤100)$ 表示 $t$ 组数据。每组数据输入一个长度范围 $[1,100]$ 的字符串 $s$，只包含小写字母。<br>
+    你需要重排 $s$ 中的字母（或者保持 $s$ 不变），使得 $abs(s[i]-s[i+1]) \neq 1$，即任意相邻字母在字母表中不相邻。<br>
+    输出任意一个符合要求的结果，如果不存在，输出 `No answer`。
+
+    在 [Codeforces](https://codeforces.com/problemset/problem/1156/B "1800")
+    或 [洛谷](https://www.luogu.com.cn/problem/CF1156B "提高+/省选-") 上查看该题。
+
+??? info "解题思路"
+    当且仅当字符串 $s$ 仅由 2 个或 3 个相邻字母组成时，无法完成构造。
+
+    === "Go"
+        ```go
+        --8<-- "construction/go/cf1156b.go"
+        ```
+    === "Java"
+        ```java
+        --8<-- "construction/java/cf1156b/Main.java"
+        ```

@@ -29,7 +29,7 @@
 
 ???+ note "问题描述"
     共有 $k$ 位工人计划将 $n$ 个箱子从旧仓库移动到新仓库。<br>
-    给你两个整数 $n(1≤n≤1e4)$ 和 $k(1≤k≤1e4)$，以及一个二维整数数组 $time$ ，数组的大小为 $k * 4$ 。<br>
+    给你两个整数 $n(1≤n≤1e4)$ 和 $k(1≤k≤1e4)$，以及一个二维整数数组 $time$ ，数组的大小为 $k \times 4$ 。<br>
     其中 $time[i] = [leftToRight_i,\ pickOld_i,\ rightToLeft_i,\ putNew_i]$ 且 $1≤time[i][j]≤1e3$ 。
 
     ??? quote "箱子搬运规则"
