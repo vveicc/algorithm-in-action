@@ -9,7 +9,7 @@
     请你返回一个大小为 $n-1$ 的数组，其中第 $d$ 个元素（从 $1$ 开始）是城市间最大距离恰好等于 $d$ 的子树数目。
 
     在 [LeetCode主站](https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities "Hard")
-    或 [力扣中文社区](https://leetcode.cn/problems/count-subtrees-with-max-distance-between-cities "困难：2308") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/count-subtrees-with-max-distance-between-cities "困难：2308") 查看该题。
 
 ??? info "解题思路"
     **方法一：枚举子树 + 树形DP**

@@ -11,7 +11,7 @@
     请你返回「表现良好时间段」的最大长度。
 
     在 [LeetCode主站](https://leetcode.com/problems/longest-well-performing-interval "Medium")
-    或 [力扣中文社区](https://leetcode.cn/problems/longest-well-performing-interval "中等：1908") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/longest-well-performing-interval "中等：1908") 查看该题。
 
 ??? info "解题思路"
     **方法一：前缀和 + 哈希表**
@@ -30,6 +30,25 @@
         --8<-- "prefix-sum/ps/go/lc1124_2.go"
         ```
 
+### LC2488: 统计中位数为 K 的子数组
+
+???+ note "问题描述"
+    给你一个长度为 `n(1≤n≤1e5)` 的数组 `nums` ，该数组由从 `1` 到 `n` 的不同整数组成。<br>
+    另给你一个正整数 `k(1≤k≤n)` 。统计并返回 `nums` 中的中位数等于 `k` 的非空子数组的数目。
+
+    在 [LeetCode主站](https://leetcode.com/problems/count-subarrays-with-median-k "Hard")
+    或 [力扣中文社区](https://leetcode.cn/problems/count-subarrays-with-median-k "困难：1999") 查看该题。
+
+??? info "解题思路"
+    **前缀和 + 哈希表**
+
+    实现时可以使用数组代替哈希表，空间换时间。
+
+    === "Go"
+        ```go
+        --8<-- "prefix-sum/ps/go/lc2488.go"
+        ```
+
 ### LC1590: 使数组和能被 P 整除
 
 ???+ note "问题描述"
@@ -39,7 +58,7 @@
     请你返回你需要移除的最短子数组的长度，如果无法满足题目要求，返回 $-1$ 。
 
     在 [LeetCode主站](https://leetcode.com/problems/make-sum-divisible-by-p "Medium")
-    或 [力扣中文社区](https://leetcode.cn/problems/make-sum-divisible-by-p "中等：2039") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/make-sum-divisible-by-p "中等：2039") 查看该题。
 
 ??? info "解题思路"
     **前缀和 + 哈希表**
@@ -57,7 +76,7 @@
     注意 $j$ 可以等于 $k$。
 
     在 [Codeforces](https://codeforces.com/problemset/problem/1552/D "1800")
-    或 [洛谷](https://www.luogu.com.cn/problem/CF1552D "普及+/提高") 上查看该题。
+    或 [洛谷](https://www.luogu.com.cn/problem/CF1552D "普及+/提高") 查看该题。
 
 ??? info "解题思路"
     数组 $a$ 中元素的顺序不影响答案。<br>
@@ -107,7 +126,7 @@ $$B_{i,j} = A_{i,j} - A_{i-1,j} - A_{i,j-1} + A_{i-1,j-1}$$
     表示一块地毯，左上角是 $(x_1,y_1)$ ，右下角是 $(x_2,y_2)$ 。坐标从 $1$ 开始。<br>
     请输出一个 $n \times n$ 的矩阵 $grid$，其中 $grid[i][j]$ 表示这个格子被多少个地毯覆盖。
 
-    在 [洛谷](https://www.luogu.com.cn/problem/P3397 "普及-") 上查看该题。
+    在 [洛谷](https://www.luogu.com.cn/problem/P3397 "普及-") 查看该题。
 
 ??? info "解题思路"
     **方法一：按行差分**

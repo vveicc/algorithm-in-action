@@ -9,7 +9,7 @@
     即满足 $0 ≤ i,j,k < n$ 且 $nums[i]\ \&\ nums[j]\ \&\ nums[k] == 0$ 的三元组 $(i, j, k)$ 的数目。
 
     在 [LeetCode主站](https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero "Hard")
-    或 [力扣中文社区](https://leetcode.cn/problems/triples-with-bitwise-and-equal-to-zero "困难：2085") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/triples-with-bitwise-and-equal-to-zero "困难：2085") 查看该题。
 
 ??? info "解题思路"
     最直接的方法就是暴力枚举三元组，时间复杂度：$O(n^3)$ ，肯定会超时。<br>

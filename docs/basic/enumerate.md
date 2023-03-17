@@ -11,7 +11,7 @@
     请返回所有不同城市对中的最大网络秩。
 
     在 [LeetCode主站](https://leetcode.com/problems/maximal-network-rank "Medium")
-    或 [力扣中文社区](https://leetcode.cn/problems/maximal-network-rank "中等：1522") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/maximal-network-rank "中等：1522") 查看该题。
 
 ??? info "解题思路"
     === "Go"
@@ -25,7 +25,7 @@
     给定一个正整数 `n(1≤n≤1e9)` ，返回连续正整数满足所有数字之和为 `n` 的组数 。
 
     在 [LeetCode主站](https://leetcode.com/problems/consecutive-numbers-sum "Hard")
-    或 [力扣中文社区](https://leetcode.cn/problems/consecutive-numbers-sum "困难：1694") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/consecutive-numbers-sum "困难：1694") 查看该题。
 
 ??? info "解题思路"
     枚举和为 `n` 的连续正整数的长度 `k` 。

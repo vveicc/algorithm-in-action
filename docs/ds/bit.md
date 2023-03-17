@@ -7,7 +7,7 @@
     对于每个区间，输出它包含多少个其它的区间。
 
     在 [Codeforces](https://codeforces.com/problemset/problem/652/D "1800")
-    或 [洛谷](https://www.luogu.com.cn/problem/CF652D "普及+/提高") 上查看该题。
+    或 [洛谷](https://www.luogu.com.cn/problem/CF652D "普及+/提高") 查看该题。
 
 ??? info "解题思路"
     === "Go"

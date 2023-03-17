@@ -9,7 +9,7 @@
     请你返回子数组内所有元素的乘积严格小于 `k` 的连续子数组的数目。
 
     在 [LeetCode主站](https://leetcode.com/problems/subarray-product-less-than-k "Medium")
-    或 [力扣中文社区](https://leetcode.cn/problems/subarray-product-less-than-k "中等") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/subarray-product-less-than-k "中等") 查看该题。
 
 ??? info "解题思路"
     === "Go"
@@ -26,7 +26,7 @@
     如果链表中存在环，则返回 `true` ；否则，返回 `false` 。
 
     在 [LeetCode主站](https://leetcode.com/problems/linked-list-cycle "Easy")
-    或 [力扣中文社区](https://leetcode.cn/problems/linked-list-cycle "简单") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/linked-list-cycle "简单") 查看该题。
 
 ??? info "解题思路"
     === "Go"
@@ -45,7 +45,7 @@
     如果答案不止一个，返回长度最长且字母序最小的字符串。如果答案不存在，则返回空字符串。
 
     在 [LeetCode主站](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting "Medium")
-    或 [力扣中文社区](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting "中等") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/longest-word-in-dictionary-through-deleting "中等") 查看该题。
 
 ??? info "解题思路"
     **方法一：双指针**
@@ -73,7 +73,7 @@
     题目保证存在且仅存在一个有效答案。你所设计的解决方案必须只使用常量级的额外空间。
 
     在 [LeetCode主站](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted "Medium")
-    或 [力扣中文社区](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted "中等") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted "中等") 查看该题。
 
 ??? info "解题思路"
     === "Go"

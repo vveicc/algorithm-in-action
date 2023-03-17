@@ -26,7 +26,7 @@ Dijkstra 算法适合用来求出无负权边图中的单源最短路径。其�
     求使得网格图中至少有一条从 `(0, 0)` 到 `(m-1, n-1)` 的有效路径的最小修改代价。
 
     在 [LeetCode主站](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid "Hard")
-    或 [力扣中文社区](https://leetcode.cn/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid "困难：2069") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid "困难：2069") 查看该题。
 
 ??? info "解题思路"
     根据题意建立有向图，每个单元格作为一个节点。<br>
@@ -62,7 +62,7 @@ Dijkstra 算法适合用来求出无负权边图中的单源最短路径。其�
     题目保证左上角 `(0, 0)` 和右下角 `(m-1, n-1)` 为空单元格。
 
     在 [LeetCode主站](https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner "Hard")
-    或 [力扣中文社区](https://leetcode.cn/problems/minimum-obstacle-removal-to-reach-corner "困难：2138") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/minimum-obstacle-removal-to-reach-corner "困难：2138") 查看该题。
 
 ??? info "解题思路"
     根据题意建立有向图，每个单元格作为一个节点。<br>

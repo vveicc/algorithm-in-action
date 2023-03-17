@@ -13,7 +13,7 @@
     输出最大收益。
     
     在 [Codeforces](https://codeforces.com/problemset/problem/1379/C "2000")
-    或 [洛谷](https://www.luogu.com.cn/problem/CF1379C "提高+/省选-") 上查看该题。
+    或 [洛谷](https://www.luogu.com.cn/problem/CF1379C "提高+/省选-") 查看该题。
 
 ??? info "解题思路"
     === "Go"

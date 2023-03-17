@@ -28,7 +28,7 @@
     给你一个长度为 $n(1≤n≤60)$ 的合法表达式，返回它所表示的所有字符串组成的有序列表。
 
     在 [LeetCode主站](https://leetcode.com/problems/brace-expansion-ii "Hard")
-    或 [力扣中文社区](https://leetcode.cn/problems/brace-expansion-ii "困难：2349") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/brace-expansion-ii "困难：2349") 查看该题。
 
 ??? info "解题思路"
     **方法一：自顶向下递归**

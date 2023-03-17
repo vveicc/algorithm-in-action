@@ -8,7 +8,7 @@
     输出不在 $a$ 中的最小非负整数。
 
     在 [Codeforces](https://codeforces.com/problemset/problem/1554/C "1800")
-    或 [洛谷](https://www.luogu.com.cn/problem/CF1554C "普及/提高-") 上查看该题。
+    或 [洛谷](https://www.luogu.com.cn/problem/CF1554C "普及/提高-") 查看该题。
 
 ??? info "解题思路"
     **方法一：从高到低按位构造**
@@ -74,7 +74,7 @@
     请你返回满足上述条件字典序最小的字符串 `num` 。
 
     在 [LeetCode主站](https://leetcode.com/problems/construct-smallest-number-from-di-string "Medium")
-    或 [力扣中文社区](https://leetcode.cn/problems/construct-smallest-number-from-di-string "中等：1642") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/construct-smallest-number-from-di-string "中等：1642") 查看该题。
 
 ??? info "解题思路"
     === "Go"
@@ -95,7 +95,7 @@
     如果有多种构造方案，输出任意一种。
 
     在 [Codeforces](https://codeforces.com/problemset/problem/1304/D "1800")
-    或 [洛谷](https://www.luogu.com.cn/problem/CF1304D "普及+/提高") 上查看该题。
+    或 [洛谷](https://www.luogu.com.cn/problem/CF1304D "普及+/提高") 查看该题。
 
     如果觉得这题比较难，可以先做简单版：[LC2375: 根据模式串构造最小数字](#lc2375-根据模式串构造最小数字)。
 
@@ -117,7 +117,7 @@
     输出任意一个符合要求的结果，如果不存在，输出 `No answer`。
 
     在 [Codeforces](https://codeforces.com/problemset/problem/1156/B "1800")
-    或 [洛谷](https://www.luogu.com.cn/problem/CF1156B "提高+/省选-") 上查看该题。
+    或 [洛谷](https://www.luogu.com.cn/problem/CF1156B "提高+/省选-") 查看该题。
 
 ??? info "解题思路"
     当且仅当字符串 $s$ 仅由 2 个或 3 个相邻字母组成时，无法完成构造。

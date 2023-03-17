@@ -13,7 +13,7 @@
     题目保证存在至少一个可行矩阵。
 
     在 [LeetCode主站](https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums "Medium")
-    或 [力扣中文社区](https://leetcode.cn/problems/find-valid-matrix-given-row-and-column-sums "中等：1868") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/find-valid-matrix-given-row-and-column-sums "中等：1868") 查看该题。
 
 ??? info "解题思路"
     贪心的将 `matrix[i][j]` 的值构造为满足行列和不超过 `rowSum` 和 `colSum` 的最大值。
@@ -21,4 +21,26 @@
     === "Go"
         ```go
         --8<-- "greedy/go/lc1605.go"
+        ```
+
+## CF1054D: Changing Array
+
+???+ note "问题描述"
+    第一行输入正整数 $n(1≤n≤2e5)\ k(1≤k≤30)$ ，第二行输入长为 $n$ 的数组 $a(0≤a[i]≤2^k-1)$ 。<br>
+    设 $mask = (1<<k)-1$ ，每次操作你可以把任意 $a[i]$ 修改为 $a[i] \oplus mask$ ，你可以操作任意次（包括 $0$ 次）。<br>
+    修改后，最多有多少个 $a$ 的非空连续子数组，其异或和不等于 $0$ ？
+
+    在 [Codeforces](https://codeforces.com/problemset/problem/1054/D "1900")
+    或 [洛谷](https://www.luogu.com.cn/problem/CF1054D "省选/NOI-") 查看该题。
+
+??? info "解题思路"
+    [这里](https://www.luogu.com.cn/blog/endlesscheng/solution-cf1054d)有一篇很详细的题解。
+
+    === "Go"
+        ```go
+        --8<-- "greedy/go/cf1054d.go"
+        ```
+    === "Java"
+        ```java
+        --8<-- "greedy/java/cf1054d/Main.java"
         ```

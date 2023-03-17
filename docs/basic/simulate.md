@@ -8,7 +8,7 @@
     返回 `num1` 和 `num2` 的乘积，以字符串形式表示。
 
     在 [LeetCode主站](https://leetcode.com/problems/multiply-strings "Medium")
-    或 [力扣中文社区](https://leetcode.cn/problems/multiply-strings "中等") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/multiply-strings "中等") 查看该题。
 
 ??? info "解题思路"
     **方法一：做加法**
@@ -55,7 +55,7 @@
     所有 $n$ 个箱子都需要放入新仓库，请你返回最后一个搬运箱子的工人到达河左岸的时间。
 
     在 [LeetCode主站](https://leetcode.com/problems/time-to-cross-a-bridge "Hard")
-    或 [力扣中文社区](https://leetcode.cn/problems/time-to-cross-a-bridge "困难：2589") 上查看该题。
+    或 [力扣中文社区](https://leetcode.cn/problems/time-to-cross-a-bridge "困难：2589") 查看该题。
 
 ??? info "解题思路"
     **方法一：四堆模拟**
