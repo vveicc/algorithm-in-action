@@ -24,7 +24,7 @@ func minDistance(houses []int, k int) int {
 	// 安排编号为i的第i+1个邮筒
 	for i := 1; i < k; i++ {
 		// 给houses[:j+1]安排编号为[0..i]的i+1个邮筒
-		// j == i表示给houses[:i+1]每个房子安排一个邮筒
+		// j == i 表示给houses[:i+1]每个房子安排一个邮筒
 		for j := n - 1; j >= i; j-- {
 			// 将houses[j0:j+1]安排给编号为i的第i+1个邮筒
 			for j0 := i; j0 <= j; j0++ {

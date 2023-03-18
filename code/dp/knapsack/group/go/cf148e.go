@@ -38,7 +38,7 @@ func main() {
 		k := len(group)
 		t += k
 		for i := min(t, m); i > 0; i-- { // 枚举背包容量
-			for j := 0; j < k && j < i; j++ { // 枚举分组内的每一个物品
+			for j := 0; j < k && j < i; j++ { // 枚举分组内的每一件物品
 				// 使用j+1的容量容纳group[j]
 				dp[i] = max(dp[i], dp[i-1-j]+group[j])
 			}

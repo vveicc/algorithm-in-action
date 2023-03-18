@@ -8,6 +8,8 @@
 
 ## 算法题目
 
+题目标题如果以 `[T]` 开头，表示这道题目是该算法的模板题。
+
 每道题目会给出以下信息：
 
 1. 默认展开的题目描述和题目来源；
@@ -30,7 +32,7 @@
         import "fmt"
 
         func main() {
-            fmt.Println("Hello, World!")
+            fmt.Println("Algorithm in Action!")
         }
         ```
     === "Java"
@@ -38,7 +40,7 @@
         public class Main {
 
             public static void main(String[] args) {
-                System.out.println("Hello, World!");
+                System.out.println("Algorithm in Action!");
             }
         }
         ```

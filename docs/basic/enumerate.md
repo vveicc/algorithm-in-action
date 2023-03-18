@@ -34,3 +34,27 @@
         ```go
         --8<-- "enumerate/go/lc829.go"
         ```
+
+## CF118C: Fancy Number
+
+???+ note "问题描述"
+    第一行输入 $n$ 和 $k$ 两个整数，$(2≤k≤n≤1e4)$ 。<br>
+    第二行输入长度为 $n$ 的字符串 $s$，仅包含 '0'~'9'。<br>
+    每次操作你可以把一个 s[i] 修改成任意 '0'~'9'，假设修改成 $b$ ，则花费为 $abs(s[i]-b)$ 。<br>
+    要使 $s$ 中至少有 $k$ 个相同字符，且在总花费最小的前提下，让修改后的 $s$ 的字典序尽量小。<br>
+    输出最小总花费以及修改后的 $s$ 。
+
+    在 [Codeforces](https://codeforces.com/problemset/problem/118/C "1900")
+    或 [洛谷](https://www.luogu.com.cn/problem/CF118C "普及+/提高") 查看该题。
+
+??? info "解题思路"
+    枚举要修改出 $k$ 个的字符 $b$ 。
+
+    === "Go"
+        ```go
+        --8<-- "enumerate/go/cf118c.go"
+        ```
+    === "Java"
+        ```java
+        --8<-- "enumerate/java/cf118c/Main.java"
+        ```

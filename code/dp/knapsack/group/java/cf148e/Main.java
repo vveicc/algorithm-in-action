@@ -33,7 +33,7 @@ public class Main {
             int k = group.length;
             t += k;
             for (int i = Math.min(t, m); i > 0; i--) { // 枚举背包容量
-                for (int j = 0; j < k && j < i; j++) { // 枚举分组内的每一个物品
+                for (int j = 0; j < k && j < i; j++) { // 枚举分组内的每一件物品
                     // 使用j+1的容量容纳group[j]
                     dp[i] = Math.max(dp[i], dp[i - 1 - j] + group[j]);
                 }
