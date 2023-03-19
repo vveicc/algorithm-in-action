@@ -41,6 +41,7 @@ public class Main {
         // 第二遍DFS通过换根DP计算每个节点为根时，与其子树中的最远怪物距离，判断是否可以作为传送门
         dfs(1, 0, inf);
         System.out.println(cnt);
+        in.close();
     }
 
     public static int dfs1(int x, int fa) {

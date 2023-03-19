@@ -4,7 +4,7 @@ import java.util.*;
 public class Main {
 
     static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-    static PrintWriter out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
+    static PrintWriter out = new PrintWriter(System.out);
 
     static List<Integer>[] ug;
     static List<Integer> xs = new ArrayList<>();

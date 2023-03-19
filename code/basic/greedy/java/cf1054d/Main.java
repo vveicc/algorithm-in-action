@@ -24,6 +24,7 @@ public class Main {
             ans -= c2(c >> 1) + c2((c + 1) >> 1);
         }
         System.out.println(ans);
+        in.close();
     }
 
     public static long c2(int n) {

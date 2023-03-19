@@ -8,6 +8,8 @@ import (
 
 func main() {
 	in := bufio.NewReader(os.Stdin)
+	out := bufio.NewWriter(os.Stdout)
+	defer out.Flush()
 
 	var n, m int
 	Fscan(in, &n, &m)
@@ -23,11 +25,15 @@ func main() {
 	q := make([]int, m+1)
 	for _, item := range items {
 		v, w, c := item[0], item[1], item[2]
-		if cv := c * v; cv >= m { // 转化为完全背包
+		if c == -1 || c == 1 { // 0-1 背包
+			for j := m; j >= v; j-- {
+				cur[j] = max(cur[j], cur[j-v]+w)
+			}
+		} else if cv := c * v; c == 0 || cv >= m { // 完全背包
 			for j := v; j <= m; j++ {
 				cur[j] = max(cur[j], cur[j-v]+w)
 			}
-		} else { // 不能转化为完全背包，使用单调队列优化
+		} else { // 多重背包，使用单调队列优化
 			// 滚动数组
 			pre, cur = cur, pre
 			// 枚举余数
@@ -56,7 +62,7 @@ func main() {
 		}
 	}
 
-	Println(cur[m])
+	Fprintln(out, cur[m])
 }
 
 func max(x, y int) int {

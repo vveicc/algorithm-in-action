@@ -4,6 +4,7 @@ import java.util.*;
 public class Main {
 
     static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+    static PrintWriter out = new PrintWriter(System.out);
 
     public static void main(String[] args) throws Exception {
         StringTokenizer nm = new StringTokenizer(in.readLine());
@@ -25,12 +26,17 @@ public class Main {
         for (int[] item : items) {
             int v = item[0], w = item[1], c = item[2];
             int cv = c * v;
-            if (cv >= m) { // 转化为完全背包
+            if (c == -1 || c == 1) { // 0-1 背包
+                int[] cur = f[i & 1];
+                for (int j = m; j >= v; j--) {
+                    cur[j] = Math.max(cur[j], cur[j - v] + w);
+                }
+            } else if (c == 0 || cv >= m) { // 完全背包
                 int[] cur = f[i & 1];
                 for (int j = v; j <= m; j++) {
                     cur[j] = Math.max(cur[j], cur[j - v] + w);
                 }
-            } else { // 不能转化为完全背包，使用单调队列优化
+            } else { // 多重背包，使用单调队列优化
                 // 滚动数组
                 int[] cur = f[++i & 1], pre = f[(i & 1) ^ 1];
                 // 枚举余数
@@ -58,7 +64,9 @@ public class Main {
             }
         }
 
-        System.out.println(f[i & 1][m]);
+        out.println(f[i & 1][m]);
+        out.flush();
+        out.close();
         in.close();
     }
 }
