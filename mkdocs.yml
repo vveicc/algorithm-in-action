@@ -26,12 +26,14 @@ nav:
     - 构造: basic/construction.md
     - 双指针: basic/two-pointer.md
   - 数据结构:
+    - 并查集: ds/dsu.md
     - 单调栈: ds/monotonous-stack.md
     - 树状数组: ds/bit.md
   - 动态规划:
     - 动态规划基础: dp/basic.md
     - 背包 DP: dp/knapsack.md
     - 树形 DP: dp/tree.md
+    - 数位 DP: dp/digital.md
   - 字符串:
     - 回文字符串: string/palindrome.md
   - 数学:
