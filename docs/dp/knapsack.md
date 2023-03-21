@@ -418,3 +418,47 @@
         ```
 
 ## 背包问题变种
+
+### 求方案数
+
+#### [[T]](#求方案数 "模板") AcWing11: 求方案数
+
+???+ note "问题描述"
+    第一行输入 $n$ 和 $m$ 两个整数，$1≤n,m≤1e3$ 。表示有 $n$ 件物品和一个容量为 $m$ 的背包。<br>
+    接下来 $n$ 行，每行输入 $v_i$ 和 $w_i$ 两个整数，表示第 $i$ 件物品的体积是 $v_i$ ，价值是 $w_i$ ，$1≤v_i,w_i≤1e3$ 。<br>
+    求解将哪些物品装入背包，可使这些物品的总体积不超过背包容量，且总价值最大。<br>
+    输出 **最优选法的方案数**。注意答案可能很大，请输出答案模 $1e9+7$ 的结果。
+
+    在 [AcWing](https://www.acwing.com/problem/content/11 "中等") 查看该题。
+
+??? info "解题思路"
+    === "Go"
+        ```go
+        --8<-- "knapsack/variant/go/acwing11.go"
+        ```
+    === "Java"
+        ```java
+        --8<-- "knapsack/variant/java/acwing11/Main.java"
+        ```
+
+### 求具体方案
+
+#### [[T]](#求具体方案 "模板") AcWing12: 求具体方案
+
+???+ note "问题描述"
+    第一行输入 $n$ 和 $m$ 两个整数，$1≤n,m≤1e3$ 。表示有 $n$ 件物品和一个容量为 $m$ 的背包。<br>
+    接下来 $n$ 行，每行输入 $v_i$ 和 $w_i$ 两个整数，表示第 $i$ 件物品的体积是 $v_i$ ，价值是 $w_i$ ，$1≤v_i,w_i≤1e3$ 。<br>
+    求解将哪些物品装入背包，可使这些物品的总体积不超过背包容量，且总价值最大。<br>
+    输出 **字典序最小的方案**。这里的字典序是指：所选物品的编号所构成的序列。物品的编号范围是 $1 \dots n$ 。
+
+    在 [AcWing](https://www.acwing.com/problem/content/12 "中等") 查看该题。
+
+??? info "解题思路"
+    === "Go"
+        ```go
+        --8<-- "knapsack/variant/go/acwing12.go"
+        ```
+    === "Java"
+        ```java
+        --8<-- "knapsack/variant/java/acwing12/Main.java"
+        ```

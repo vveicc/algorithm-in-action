@@ -1,5 +1,25 @@
 # 构造
 
+## CF1325D: Ehab the Xorcist
+
+???+ note "问题描述"
+    输入 $u$ 和 $v$ 两个整数，范围均在 $[0,1e18]$ 。<br>
+    构造一个长度最短的数组（允许为空），满足异或和等于 $u$ ，和等于 $v$ 。<br>
+    如果无法构造，输出 $-1$ ；否则第一行输出数组长度，第二行输出任意满足要求的数组（空数组无需输出）。
+
+    在 [Codeforces](https://codeforces.com/problemset/problem/1325/D "1700")
+    或 [洛谷](https://www.luogu.com.cn/problem/CF1325D "普及+/提高") 查看该题。
+
+??? info "解题思路"
+    === "Go"
+        ```go
+        --8<-- "construction/go/cf1325d.go"
+        ```
+    === "Java"
+        ```java
+        --8<-- "construction/java/cf1325d/Main.java"
+        ```
+
 ## CF1554C: Mikasa
 
 ???+ note "问题描述"
