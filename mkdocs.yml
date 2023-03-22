@@ -172,6 +172,7 @@ extra:
       link: https://github.com/vveicc
 
 extra_css:
+  - stylesheets/sidebar.css
   - stylesheets/source-file.css
 
 extra_javascript:

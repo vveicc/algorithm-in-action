@@ -83,3 +83,26 @@
         ```go
         --8<-- "enumerate/go/lc1625.go"
         ```
+
+## CF1181C: Flag
+
+???+ note "问题描述"
+    第一行输入 $n$ 和 $m$ 两个整数，$(1≤n,m≤1e3)$ 。<br>
+    接下来 $n$ 行每行输入一个长度为 $m$ 的字符串，形成一个 $n \times m$ 的字符矩阵，元素都是小写字母。<br>
+    定义「国旗」为一个 $3 \times h$ 行的子矩阵，前 $h$ 行的字符都相同，中间 $h$ 行的字符都相同，后 $h$ 行的字符都相同，它们分别记作 A B C，要求 A 和 B 的字符不同，B 和 C 的字符不同（A 和 C 无要求）。<br>
+    输出是国旗的子矩阵的数量。
+
+    在 [Codeforces](https://codeforces.com/problemset/problem/1181/C "1900")
+    或 [洛谷](https://www.luogu.com.cn/problem/CF1181C "提高+/省选-") 查看该题。
+
+??? info "解题思路"
+    按列枚举国旗右边界，按行枚举中间 $h$ 行。
+
+    === "Go"
+        ```go
+        --8<-- "enumerate/go/cf1181c.go"
+        ```
+    === "Java"
+        ```java
+        --8<-- "enumerate/java/cf1181c/Main.java"
+        ```
