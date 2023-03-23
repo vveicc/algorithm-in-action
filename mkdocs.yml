@@ -30,11 +30,14 @@ nav:
     - 单调栈: ds/monotonous-stack.md
     - 树状数组: ds/bit.md
   - 动态规划:
-    - 动态规划基础: dp/basic.md
+    - 动态规划基础:
+      - 买卖股票: dp/basic/stock.md
+      - 打家劫舍: dp/basic/rob.md
     - 背包 DP: dp/knapsack.md
     - 树形 DP: dp/tree.md
     - 数位 DP: dp/digital.md
   - 字符串:
+    - 字符串分割: string/split.md
     - 回文字符串: string/palindrome.md
   - 数学:
     - 二进制集合操作: math/binary-set.md
