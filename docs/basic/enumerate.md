@@ -84,6 +84,30 @@
         --8<-- "enumerate/go/lc1625.go"
         ```
 
+## CF1626D: Martial Arts Tournament
+
+???+ note "问题描述"
+    第一行输入 $t(1≤t≤1e4)$ 表示 $t$ 组数据。所有数据的 $n$ 之和 $≤2e5$。<br>
+    每组数据第一行输入 $n(1≤n≤2e5)$ ，第二行输入长为 $n$ 的整数数组 $a(1≤a[i]≤n)$ 。<br>
+    你需要选择两个整数 $x\ y\ (x<y)$ ，把 $a$ 中小于 $x$ 的数分为一组，大于等于 $y$ 的分为一组，其余的分为一组，一共三组。
+    对每一组，如果组的大小不是 $2$ 的幂次，则增加到最近的 $2$ 的幂次，花费为增量。比如 $5$ 补齐到 $8$ ，花费为 $8-5=3$ 。如果已经是 $2$ 的幂次，则花费为 $0$ 。<br>
+    计算花费之和的最小值。
+
+    在 [Codeforces](https://codeforces.com/problemset/problem/1626/D "2100")
+    或 [洛谷](https://www.luogu.com.cn/problem/CF1626D "普及+/提高") 查看该题。
+
+??? info "解题思路"
+    枚举 $x$ 和 $y$ 显然会超时，不妨换个思路，枚举与组的大小最接近的 $2$ 的幂次。
+
+    === "Go"
+        ```go
+        --8<-- "enumerate/go/cf1626d.go"
+        ```
+    === "Java"
+        ```java
+        --8<-- "enumerate/java/cf1626d/Main.java"
+        ```
+
 ## CF1181C: Flag
 
 ???+ note "问题描述"
