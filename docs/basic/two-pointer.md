@@ -17,6 +17,31 @@
         --8<-- "two-pointer/sliding-window/go/lc713.go"
         ```
 
+### LC1574: 删除最短的子数组使剩余数组有序
+
+???+ note "问题描述"
+    给你一个长度为 `n(1≤n≤1e5)` 的整数数组 `arr(0≤arr[i]≤1e9)` 。<br>
+    请你删除一个子数组（可以为空），使得 `arr` 中剩下的元素是 **非递减** 的。<br>
+    请你返回满足题目要求的最短子数组的长度。
+
+    在 [LeetCode主站](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted "Medium")
+    或 [力扣中文社区](https://leetcode.cn/problems/shortest-subarray-to-be-removed-to-make-array-sorted "中等：1932") 查看该题。
+
+??? info "解题思路"
+    **方法一：枚举左端点，移动右端点**
+
+    === "Go"
+        ```go
+        --8<-- "two-pointer/sliding-window/go/lc1574_1.go"
+        ```
+
+    **方法二：枚举右端点，移动左端点**
+
+    === "Go"
+        ```go
+        --8<-- "two-pointer/sliding-window/go/lc1574_2.go"
+        ```
+
 ## 快慢指针
 
 ### LC141: 环形链表
