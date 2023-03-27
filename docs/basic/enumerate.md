@@ -35,6 +35,38 @@
         --8<-- "enumerate/go/lc829.go"
         ```
 
+## LC1638: 统计只差一个字符的子串数目
+
+???+ note "问题描述"
+    给你两个长度为 `n(1≤n≤100)` 且仅包含小写英文字母的字符串 `s` 和 `t` ，请你找出 `s` 中的非空子串的数目，这些子串满足替换 **一个不同字符** 以后，是 `t` 串的子串。换言之，请你找到 `s` 和 `t` 串中 **恰好** 只有一个字符不同的子字符串对的数目。
+
+    在 [LeetCode主站](https://leetcode.com/problems/consecutive-numbers-sum "Medium")
+    或 [力扣中文社区](https://leetcode.cn/problems/consecutive-numbers-sum "中等：1745") 查看该题。
+
+??? info "解题思路"
+    两个子串长度相等，恰好有一个字符不同。
+
+    **方法一：暴力枚举**
+
+    === "Go"
+        ```go
+        --8<-- "enumerate/go/lc1638_1.go"
+        ```
+
+    **方法二：动态规划 + 枚举**
+
+    === "Go"
+        ```go
+        --8<-- "enumerate/go/lc1638_2.go"
+        ```
+
+    **方法三：总结规律 + 枚举**
+
+    === "Go"
+        ```go
+        --8<-- "enumerate/go/lc1638_3.go"
+        ```
+
 ## CF118C: Fancy Number
 
 ???+ note "问题描述"

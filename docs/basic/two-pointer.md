@@ -17,6 +17,29 @@
         --8<-- "two-pointer/sliding-window/go/lc713.go"
         ```
 
+### CF1535C: Unstable String
+
+???+ note "问题描述"
+    第一行输入 `t(1≤t≤1e4)` 表示 `t` 组数据。所有数据的字符串长度之和 `≤2e5`。<br>
+    每组数据输入一个长度不超过 `2e5` 的字符串 `s` ，仅包含 `'0'` `'1'` `'?'` 三种字符。
+
+    定义子串是 **不稳定的** 当且仅当子串中任意相邻两数均不相同，如 `101010⋯` 或 `010101⋯` 。<br>
+    定义子串是 **好看的** 当且仅当可以将其中的 `?` 改为 `0` 或 `1`（每个 `?` 怎么改是独立的）使得这个子串是不稳定的。<br>
+    求字符串中好看的子串个数之和。
+
+    在 [Codeforces](https://codeforces.com/problemset/problem/1535/C "1400")
+    或 [洛谷](https://www.luogu.com.cn/problem/CF1535C "普及+/提高") 查看该题。
+
+??? info "解题思路"
+    === "Go"
+        ```go
+        --8<-- "two-pointer/sliding-window/go/cf1535c.go"
+        ```
+    === "Java"
+        ```java
+        --8<-- "two-pointer/sliding-window/java/cf1535c/Main.java"
+        ```
+
 ### LC1574: 删除最短的子数组使剩余数组有序
 
 ???+ note "问题描述"
