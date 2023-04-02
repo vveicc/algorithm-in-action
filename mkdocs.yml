@@ -37,6 +37,7 @@ nav:
     - 背包 DP:
       - 单背包问题: dp/knapsack/knapsack.md
       - 多背包问题: dp/knapsack/multi-knapsacks.md
+    - 区间 DP: dp/interval.md
     - 树形 DP: dp/tree.md
     - 数位 DP: dp/digital.md
   - 字符串:
