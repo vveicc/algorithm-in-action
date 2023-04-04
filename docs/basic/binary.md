@@ -2,7 +2,7 @@
 
 ## 二分法
 
-### CF1379C: Choosing flowers
+### CF1379C. Choosing flowers
 
 ???+ note "问题描述"
     第一行输入 $t(1≤t≤1e4)$ 表示 $t$ 组由空行分隔的数据。所有 $t$ 组数据的 $m$ 之和 $≤1e5$。<br>

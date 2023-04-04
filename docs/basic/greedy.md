@@ -1,6 +1,25 @@
 # 贪心
 
-## LC1605: 给定行和列的和求可行矩阵
+## LC1053. 交换一次的先前排列
+
+???+ note "问题描述"
+    给你一个长度为 `n(1≤n≤1e4)` 的正整数数组 `arr` ，其中 `1≤arr[i]≤1e4` 且可能存在重复的元素。<br>
+    请你返回可在 **一次交换**（交换两数字 `arr[i]` 和 `arr[j]` 的位置）后得到的、按字典序排列小于 `arr` 的最大排列。<br>
+    如果无法这么操作，就请返回原数组。
+
+    在 [LeetCode主站](https://leetcode.com/problems/previous-permutation-with-one-swap "Medium")
+    或 [力扣中文社区](https://leetcode.cn/problems/previous-permutation-with-one-swap "中等：1633") 查看该题。
+
+??? info "解题思路"
+    不失一般性的，假设 `i < j` ，则需要满足 `arr[i] > arr[j]` 才能使得交换后的字典序小于原数组。<br>
+    同时，为了使交换后的数组是最大排列，需要让 `i` 尽可能大，`j` 尽可能小，且 `arr[j]` 是 `i` 右侧小于 `arr[i]` 的最大元素。
+
+    === "Go"
+        ```go
+        --8<-- "greedy/go/lc1053.go"
+        ```
+
+## LC1605. 给定行列和求可行矩阵
 
 ???+ note "问题描述"
     给你两个长度分别为 `m` 和 `n` 的非负整数数组 `rowSum` 和 `colSum` ，其中：
@@ -23,7 +42,7 @@
         --8<-- "greedy/go/lc1605.go"
         ```
 
-## CF1054D: Changing Array
+## CF1054D. Changing Array
 
 ???+ note "问题描述"
     第一行输入正整数 $n(1≤n≤2e5)\ k(1≤k≤30)$ ，第二行输入长为 $n$ 的数组 $a(0≤a[i]≤2^k-1)$ 。<br>

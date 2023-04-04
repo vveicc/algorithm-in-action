@@ -1,6 +1,6 @@
 # 字符串分割
 
-## CF1624E: Masha-forgetful
+## CF1624E. Masha-forgetful
 
 ???+ note "问题描述"
     第一行输入 $t(1≤t≤1e4)$ 表示 $t$ 组数据。所有数据的 $n \times m$ 之和 $≤1e6$。<br>

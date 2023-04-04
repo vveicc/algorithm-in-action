@@ -6,7 +6,7 @@
 
 每个物品的费用和价值固定。
 
-### CF687C: The Values You Can Make
+### CF687C. The Values You Can Make { data-toc-label='CF687C. The Values You Ca...' }
 
 ???+ note "问题描述"
     第一行输入 $n$ 和 $k$ 两个整数，$1≤n,k≤500$ 。<br>
@@ -40,7 +40,7 @@
 
 每个物品的费用或价值根据一定条件动态变化。状态转移时计算具体的费用或价值即可。
 
-### CF1525D: Armchairs
+### CF1525D. Armchairs
 
 ???+ note "问题描述"
     第一行输入 $n(2≤n≤5000)$ ，第二行输入长为 $n$ 的数组 $a$ ，其中只有 0 和 1。保证 1 的数量不超过 $n/2$ 。<br>
@@ -51,7 +51,7 @@
     在 [Codeforces](https://codeforces.com/problemset/problem/1525/D "1800")
     或 [洛谷](https://www.luogu.com.cn/problem/CF1525D "普及+/提高") 查看该题。
 
-    进阶：如果一把椅子可以坐多个人呢？参考 [LC2463: 最小移动总距离](#lc2463-最小移动总距离)。
+    进阶：如果一把椅子可以坐多个人呢？参考 [LC2463. 最小移动总距离](#lc2463-最小移动总距离)。
 
 ??? info "解题思路"
     根据输入可以得到人的位置序列 $peoples$ 和椅子的位置序列 $chairs$ ，两个序列严格递增。<br>
@@ -74,7 +74,7 @@
         --8<-- "knapsack/multi-knapsacks/java/cf1525d/Main.java"
         ```
 
-### LC2463: 最小移动总距离
+### LC2463. 最小移动总距离
 
 ???+ note "问题描述"
     给你一个长度为 $m(1≤m≤100)$ 的机器人数组 $robot$ ，$robot[i]$ 是第 $i$ 个机器人的位置，范围：$[-1e9,1e9]$。<br>
@@ -87,12 +87,12 @@
     在 [LeetCode主站](https://leetcode.com/problems/minimum-total-distance-traveled "Hard")
     或 [力扣中文社区](https://leetcode.cn/problems/minimum-total-distance-traveled "困难：2454") 查看该题。
 
-    如果觉得这题比较难，可以先做简单版：[CF1525D: Armchairs](#cf1525d-armchairs)。
+    如果觉得这题比较难，可以先做简单版：[CF1525D. Armchairs](#cf1525d-armchairs)。
 
 ??? info "解题思路"
     不失一般性地，假设机器人的坐标是递增的，工厂的坐标也是递增的。<br>
     设最优方案中，机器人 $i$ 进入工厂 $f_i$，则 **存在最优方案，使得 $f_i$ 是不严格单调递增的** 。<br>
-    与 [CF1525D: Armchairs](#cf1525d-armchairs) 类似，唯一的不同在于多个机器人可以进入相同的工厂，所以 $f_i$ 是不严格单调递增的。
+    与 [CF1525D. Armchairs](#cf1525d-armchairs) 类似，唯一的不同在于多个机器人可以进入相同的工厂，所以 $f_i$ 是不严格单调递增的。
 
     如果把每个工厂当做容量为 $factory[j][1]$ 的背包，机器人当做体积为 $1$ 的物品，则转化为动态物品多背包问题。<br>
     定义 $dp[i][j]$ 表示前 $j$ 个机器人进入前 $i$ 个工厂维修的最小移动总距离。<br>
@@ -103,7 +103,7 @@
         --8<-- "knapsack/multi-knapsacks/go/lc2463.go"
         ```
 
-### LC1478: 安排邮筒
+### LC1478. 安排邮筒
 
 ???+ note "问题描述"
     给你一个长度为 $n(1≤n≤100)$ 的房屋数组 $houses$ 和一个整数 $k(1≤k≤n)$ 。<br>

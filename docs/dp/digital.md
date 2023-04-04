@@ -1,6 +1,6 @@
 # 数位 DP
 
-## LC357: 各位数字都不同的数字
+## LC357. 各位数字都不同的数字
 
 ???+ note "问题描述"
     给你一个整数 $n(0≤n≤8)$ ，统计并返回各位数字都不同的数字 $x(0≤x<10^n)$ 的个数。
@@ -16,7 +16,7 @@
         --8<-- "digital/go/lc357.go"
         ```
 
-## LC1012: 至少有 1 位重复的数字
+## LC1012. 至少有 1 位重复的数字
 
 ???+ note "问题描述"
     给定正整数 $n(1≤n≤1e9)$，返回在 $[1, n]$ 范围内具有 **至少 $1$ 位** 重复数字的正整数的个数。
@@ -24,7 +24,7 @@
     在 [LeetCode主站](https://leetcode.com/problems/numbers-with-repeated-digits "Hard")
     或 [力扣中文社区](https://leetcode.cn/problems/numbers-with-repeated-digits "困难：2230") 查看该题。
 
-    如果要统计每个数位互不相同的正整数的个数呢？参考 [LC2376: 统计特殊整数](https://leetcode.cn/problems/count-special-integers "困难：2120")。
+    如果要统计每个数位互不相同的正整数的个数呢？参考 [LC2376. 统计特殊整数](https://leetcode.cn/problems/count-special-integers "困难：2120")。
 
 ??? info "解题思路"
     **数位 DP + 记忆化搜索**
@@ -34,7 +34,7 @@
         --8<-- "digital/go/lc1012.go"
         ```
 
-## LC600: 不含连续 1 的非负整数
+## LC600. 不含连续 1 的非负整数
 
 ???+ note "问题描述"
     给定一个正整数 $n(1≤n≤1e9)$ ，统计在 $[0, n]$ 范围的整数中，二进制表示不存在 **连续的 $1$** 的整数的个数。
@@ -57,7 +57,7 @@
         --8<-- "digital/go/lc600_2.go"
         ```
 
-## LC902: 最大为 N 的数字组合
+## LC902. 最大为 N 的数字组合
 
 ???+ note "问题描述"
     给定一个按 **严格递增顺序** 排列的数字数组 `digits` ，`'1'≤digits[i]≤'9'` 。<br>
@@ -75,7 +75,7 @@
         --8<-- "digital/go/lc902.go"
         ```
 
-## LC788: 旋转数字
+## LC788. 旋转数字
 
 ???+ note "问题描述"
     我们称一个数 X 为好数, 如果它的每位数字逐个地被旋转 180 度后，我们仍可以得到一个有效的，且和 X 不同的数。要求每位数字都要被旋转。<br>
@@ -95,7 +95,7 @@
         --8<-- "digital/go/lc788.go"
         ```
 
-## LC233: 数字 1 的个数
+## LC233. 数字 1 的个数
 
 ???+ note "问题描述"
     给定一个整数 $n(0≤n≤1e9)$ ，计算所有小于等于 $n$ 的非负整数中数字 $1$ 出现的个数。
@@ -103,7 +103,7 @@
     在 [LeetCode主站](https://leetcode.com/problems/number-of-digit-one "Hard")
     或 [力扣中文社区](https://leetcode.cn/problems/number-of-digit-one "困难") 查看该题。
 
-    如果要统计数字 $2$ 出现的个数呢？参考 [LC面试题 17.06: 2出现的次数](https://leetcode.cn/problems/number-of-2s-in-range-lcci "困难")。
+    如果要统计数字 $2$ 出现的个数呢？参考 [LC面试题 17.06. 2出现的次数](https://leetcode.cn/problems/number-of-2s-in-range-lcci "困难")。
 
 ??? info "解题思路"
     **方法一：数学**
@@ -129,7 +129,7 @@
         --8<-- "digital/go/lc233_2.go"
         ```
 
-## LG2602: [ZJOI2010] 数字计数
+## LG2602. [ZJOI2010] 数字计数
 
 ???+ note "问题描述"
     输入两个正整数 $a$ 和 $b$ ，$1≤a≤b≤1e12$，求在 $[a,b]$ 中的所有整数中，每个数码(digit)各出现了多少次。
@@ -148,7 +148,7 @@
         --8<-- "digital/java/lg2602/Main.java"
         ```
 
-## LC1397: 找到所有好字符串
+## LC1397. 找到所有好字符串
 
 ???+ note "问题描述"
     给你两个长度为 `n(1≤n≤500)` 的字符串 `s1` 和 `s2` ，`s1<=s2` ，以及一个字符串 `evil` 。<br>

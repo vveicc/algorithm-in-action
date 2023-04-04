@@ -2,7 +2,7 @@
 
 ## 换根 DP
 
-### CF219D: Choosing Capital for Treeland
+### CF219D. Choosing Capital for Treeland { data-toc-label='CF219D. Choosing Capital fo...' }
 
 ???+ note "问题描述"
     输入 $n(2≤n≤2e5)$ 和 $n-1$ 条边 $v \quad w$，表示一条 $v \to w$ 的有向边（节点编号从 $1$ 开始）。<br>
@@ -30,7 +30,7 @@
         --8<-- "tree/root-changing/java/cf219d/Main.java"
         ```
 
-### CF337D: Book of Evil
+### CF337D. Book of Evil
 
 ???+ note "问题描述"
     输入 $n\ m(1≤m≤n≤1e5)\ d(0≤d≤n-1)$ 表示一棵 $n$ 个节点的树，其中 $m$ 个节点有怪物，这些怪物是由一个传送门生成的，传送门与任意怪物的距离不超过 $d$。<br>

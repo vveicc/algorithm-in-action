@@ -1,6 +1,6 @@
 # 构造
 
-## CF1325D: Ehab the Xorcist
+## CF1325D. Ehab the Xorcist
 
 ???+ note "问题描述"
     输入 $u$ 和 $v$ 两个整数，范围均在 $[0,1e18]$ 。<br>
@@ -20,7 +20,7 @@
         --8<-- "construction/java/cf1325d/Main.java"
         ```
 
-## CF1554C: Mikasa
+## CF1554C. Mikasa
 
 ???+ note "问题描述"
     输入 $t(1≤t≤3e4)$ 表示 $t$ 组数据，每组数据输入两个整数 $n$ 和 $m$，均在 $[0,1e9]$ 范围内。<br>
@@ -81,7 +81,7 @@
         --8<-- "construction/java/cf1554c_2/Main.java"
         ```
 
-## LC2375: 根据模式串构造最小数字
+## LC2375. 根据模式串构造最小数字 { data-toc-label='LC2375. 根据模式串构造最小数...' }
 
 ???+ note "问题描述"
     给你下标从 `0` 开始、长度为 `n(1≤n≤8)` 的字符串 `pattern` ，只包含 `'I'` 和 `'D'` 。<br>
@@ -102,7 +102,7 @@
         --8<-- "construction/go/lc2375.go"
         ```
 
-## CF1304D: Shortest and Longest LIS
+## CF1304D. Shortest and Longest LIS { data-toc-label='CF1304D. Shortest and Longe...' }
 
 ???+ note "问题描述"
     输入 $t(1≤t≤1e4)$ 表示 $t$ 组数据。所有数据的 $n$ 之和 $≤2e5$。<br>
@@ -117,7 +117,7 @@
     在 [Codeforces](https://codeforces.com/problemset/problem/1304/D "1800")
     或 [洛谷](https://www.luogu.com.cn/problem/CF1304D "普及+/提高") 查看该题。
 
-    如果觉得这题比较难，可以先做简单版：[LC2375: 根据模式串构造最小数字](#lc2375-根据模式串构造最小数字)。
+    如果觉得这题比较难，可以先做简单版：[LC2375. 根据模式串构造最小数字](#lc2375-根据模式串构造最小数字)。
 
 ??? info "解题思路"
     === "Go"
@@ -129,7 +129,7 @@
         --8<-- "construction/java/cf1304d/Main.java"
         ```
 
-## CF1156B: Ugly Pairs
+## CF1156B. Ugly Pairs
 
 ???+ note "问题描述"
     输入 $t(1≤t≤100)$ 表示 $t$ 组数据。每组数据输入一个长度范围 $[1,100]$ 的字符串 $s$，只包含小写字母。<br>
