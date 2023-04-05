@@ -1,4 +1,4 @@
-# 单背包问题
+# 背包 DP
 
 ## 0-1 背包
 
@@ -58,7 +58,7 @@
 
     因此，状态转移方程可以优化为：
 
-    $$f[i][j] = {max}(f[i-1][j], f[i][j-v_i])$$
+    $$f[i][j] = {max}(f[i-1][j], f[i][j-v_i]+w_i)$$
 
     实现时可以优化掉第一个维度，注意循环枚举顺序。
 
@@ -255,6 +255,8 @@
     在 [AcWing](https://www.acwing.com/problem/content/10 "困难") 查看该题。
 
 ??? info "解题思路"
+    **树形 DP**
+
     === "Go"
         ```go
         --8<-- "knapsack/dependent/go/acwing10.go"
@@ -262,6 +264,27 @@
     === "Java"
         ```java
         --8<-- "knapsack/dependent/java/acwing10/Main.java"
+        ```
+
+### LG2014. [CTSC1997] 选课
+
+???+ note "问题描述"
+    第一行输入 $n(1≤n≤300)$ 和 $m(1≤m≤300)$ 两个整数。表示需要从 $n$ 门课程里选择 $m$ 门课程学习。<br>
+    接下来 $n$ 行，每行输入 $k_i\ \ s_i$ 两个整数，表示第 $i(1≤i≤n)$ 门课程的学分为 $s_i(1≤s_i≤20)$ 。如果 $k_i = 0$ ，该课程可以直接学习；否则，学习该课程前必须先学习第 $k_i(1≤k_i≤n)$ 门课程。<br>
+    求解选择哪些课程学习，能获得的学分最大。输出最大学分。
+
+    在 [洛谷](https://www.luogu.com.cn/problem/P2014 "普及+/提高") 查看该题。
+
+??? info "解题思路"
+    **树形 DP**
+
+    === "Go"
+        ```go
+        --8<-- "knapsack/dependent/go/lg2014.go"
+        ```
+    === "Java"
+        ```java
+        --8<-- "knapsack/dependent/java/lg2014/Main.java"
         ```
 
 ### LG1064. 金明的预算方案

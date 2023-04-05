@@ -1,3 +1,7 @@
 .md-nav__link {
     justify-content: start;
 }
+
+.md-nav__item .md-nav__link--index [href] {
+    width: auto;
+}
