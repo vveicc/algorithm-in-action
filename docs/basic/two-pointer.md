@@ -65,6 +65,24 @@
         --8<-- "two-pointer/sliding-window/go/lc1574_2.go"
         ```
 
+### LC1040. 移动石子直到连续 II
+
+???+ note "问题描述"
+    在一个长度 **无限** 的数轴上，有 `3≤n≤1e4` 颗位置互不相同的石子，第 i 颗石子的位置为 `1≤stones[i]≤1e9`。<br>
+    如果一颗石子的位置最小/最大，那么该石子被称作 **端点石子** 。<br>
+    每个回合，你可以将一颗端点石子拿起并移动到一个未占用的位置，使得该石子不再是一颗端点石子。<br>
+    值得注意的是，如果石子像 `stones = [1,2,5]` 这样，你将 **无法** 移动位于位置 5 的端点石子，因为无论将它移动到任何位置（例如 0 或 3），该石子都仍然会是端点石子。<br>
+    当你无法进行任何移动时，即这些石子的位置连续时，游戏结束。请计算要使游戏结束，你可以执行的最小和最大移动次数分别是多少？以长度为 2 的数组形式返回答案：`answer = [minimum_moves, maximum_moves]` 。
+
+    在 [LeetCode主站](https://leetcode.com/problems/moving-stones-until-consecutive-ii "Medium")
+    或 [力扣中文社区](https://leetcode.cn/problems/moving-stones-until-consecutive-ii "中等：2456") 查看该题。
+
+??? info "解题思路"
+    === "Go"
+        ```go
+        --8<-- "two-pointer/sliding-window/go/lc1040.go"
+        ```
+
 ## 快慢指针
 
 ### LC141. 环形链表
