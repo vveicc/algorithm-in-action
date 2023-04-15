@@ -38,17 +38,22 @@ nav:
       - dp/knapsack/index.md
       - 多背包 DP: dp/knapsack/multi-knapsacks.md
     - 区间 DP: dp/interval.md
-    - 树形 DP: dp/tree.md
+    - 树形 DP:
+      - dp/tree/index.md
+      - 换根 DP: dp/tree/root-changing.md
     - 数位 DP: dp/digital.md
   - 字符串:
     - 字符串分割: string/split.md
     - 回文字符串: string/palindrome.md
   - 数学:
+    - 位运算: math/bit.md
     - 二进制集合操作: math/binary-set.md
   - 图论:
     - 树上问题:
       - 树的直径: graph/tree/diameter.md
+    - 拓扑排序: graph/topo.md
     - 最短路: graph/shortest-path.md
+    - 最小环: graph/min-circle.md
 
 # Configuration
 theme:
