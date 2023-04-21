@@ -120,12 +120,42 @@
         ```go
         --8<-- "two-pointer/subseq-matching/go/lc524_1.go"
         ```
-    
+
     **方法二：预处理 + 双指针**
 
     === "Go"
         ```go
         --8<-- "two-pointer/subseq-matching/go/lc524_2.go"
+        ```
+
+### LC2565. 最少得分子序列
+
+???+ note "问题描述"
+    给你一个长度为 `1≤m≤1e5` 字符串 `s` 和一个长度为 `1≤n≤1e5` 字符串 `t` 。<br>
+    你可以从字符串 `t` 中删除任意数目的字符。<br>
+    如果没有从字符串 `t` 中删除字符，那么得分为 0 ，否则字符串的得分为 `right - left + 1` ，其中：
+
+    - `left` 为删除字符中的最小下标。
+    - `right` 为删除字符中的最大下标。
+
+    请你返回使 `t` 成为 `s` 子序列的最小得分。
+
+    在 [LeetCode主站](https://leetcode.com/problems/subsequence-with-the-minimum-score "Hard")
+    或 [力扣中文社区](https://leetcode.cn/problems/subsequence-with-the-minimum-score "困难：2432") 查看该题。
+
+??? info "解题思路"
+    **方法一：双指针 + 二分查找**
+
+    === "Go"
+        ```go
+        --8<-- "two-pointer/subseq-matching/go/lc2565_1.go"
+        ```
+
+    **方法二：双指针**
+
+    === "Go"
+        ```go
+        --8<-- "two-pointer/subseq-matching/go/lc2565_2.go"
         ```
 
 ## 利用序列有序性

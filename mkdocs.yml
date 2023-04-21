@@ -30,6 +30,9 @@ nav:
     - 单调栈: ds/monotonous-stack.md
     - 字典树: ds/tire.md
     - 树状数组: ds/bit.md
+    - 线段树:
+      - ds/seg/index.md
+      - 区间修改与懒惰标记: ds/seg/lazy.md
   - 动态规划:
     - 动态规划基础:
       - 买卖股票: dp/basic/stock.md

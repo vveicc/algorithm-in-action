@@ -150,3 +150,22 @@
         ```java
         --8<-- "construction/java/cf1156b/Main.java"
         ```
+
+## LC2573. 找出对应 LCP 矩阵的字符串 { data-toc-label='LC2573. 找出对应 LCP 矩阵的...' }
+
+???+ note "问题描述"
+    对任一由 `1≤n≤1e3` 个小写英文字母组成的字符串 `word` ，我们可以定义一个 `n x n` 的矩阵，并满足：
+
+    * `lcp[i][j]` 等于子字符串 `word[i,...,n-1]` 和 `word[j,...,n-1]` 之间的最长公共前缀的长度。
+
+    给你一个 `n x n` 的矩阵 `lcp` 。返回与 `lcp` 对应的、按字典序最小的字符串 `word` 。<br>
+    如果不存在这样的字符串，则返回空字符串。
+
+    在 [LeetCode主站](https://leetcode.com/problems/find-the-string-with-lcp "Hard")
+    或 [力扣中文社区](https://leetcode.cn/problems/find-the-string-with-lcp "困难：2682") 查看该题。
+
+??? info "解题思路"
+    === "Go"
+        ```go
+        --8<-- "construction/go/lc2573.go"
+        ```

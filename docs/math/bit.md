@@ -1,5 +1,23 @@
 # 位运算
 
+## LC2568. 最小无法得到的或值
+
+???+ note "问题描述"
+    给你一个长度为 `1≤n≤1e5` ，下标从 `0` 开始的整数数组 `nums` ，`1≤nums[i]≤1e9` 。
+    如果存在一些整数满足 $0 <= i_1 < i_2 < \dots < i_k < n$ ，得到 $nums[i_1] | nums[i_2] | ... | nums[i_k] = x$ ，那么我们说 `x` 是 **可表达的** 。换言之，如果一个整数能由 `nums` 的某个子序列的或运算得到，那么它就是可表达的。
+    请你返回 `nums` 不可表达的 **最小非零整数** 。
+
+    在 [LeetCode主站](https://leetcode.com/problems/minimum-impossible-or "Medium")
+    或 [力扣中文社区](https://leetcode.cn/problems/minimum-impossible-or "中等：1754") 查看该题。
+
+??? info "解题思路"
+    如果 `x` 不能表达，则 `x` 的二进制一定有一个 `1` 不能表达。
+
+    === "Go"
+        ```go
+        --8<-- "bit/go/lc2568.go"
+        ```
+
 ## CF1469E. A Bit Similar
 
 ???+ note "问题描述"
