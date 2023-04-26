@@ -61,3 +61,65 @@
         ```go
         --8<-- "seg/lazy/go/lc2569.go"
         ```
+
+## LC2547. 拆分数组的最小代价
+
+???+ note "问题描述"
+    给你一个长度为 `1≤n≤1e3` 的整数数组 `nums(0≤nums[i]<n)` 和一个整数 `1≤k≤1e9`。<br>
+    将数组拆分成一些非空子数组。拆分的 **代价** 是每个子数组中的 **重要性** 之和。
+
+    令 `trimmed(subarray)` 作为子数组的一个特征，其中所有仅出现一次的数字将会被移除。
+
+    - 例如，`trimmed([3,1,2,4,3,4]) = [3,4,3,4]` 。
+
+    子数组的 **重要性** 定义为 `k + trimmed(subarray).length` 。<br>
+    找出并返回拆分 `nums` 的所有可行方案中的最小代价。
+
+    在 [LeetCode主站](https://leetcode.com/problems/minimum-cost-to-split-an-array "Hard")
+    或 [力扣中文社区](https://leetcode.cn/problems/minimum-cost-to-split-an-array "困难：2020") 查看该题。
+
+??? info "解题思路"
+    ??? tip "方法一：动态规划"
+        定义 $f_{i}$ 表示拆分 `nums[:i]` 的最小代价，则状态转移如下：
+
+        $$f_{i+1} = \min_{j=0}^i\{f_j + trimmed(nums[j:i+1]).length + k\}$$
+        
+        === "Go"
+            ```go
+            --8<-- "seg/lazy/go/lc2547_1.go"
+            ```
+
+    ??? tip "方法二：动态规划"
+        记 $unique_{j,i}$ 表示 `nums[j:i+1]` 中仅出现一次的数字个数。<br>
+        则 $trimmed(nums[j:i+1]).length = i + 1 - j - unique_{j,i}$ ，方法一中的状态转移转化为：
+
+        $$f_{i+1} = i + 1 + k + \min_{j=0}^i\{f_j - j - unique_{j,i}\}$$
+
+        定义 $f'_i = f_i - i$ ，则状态转移进一步转化为：
+
+        $$f'_{i+1} = k + \min_{j=0}^i\{f'_j - unique_{j,i}\}$$
+
+        最终答案为 $f_n = f'_{n} + n$ 。
+
+        === "Go"
+            ```go
+            --8<-- "seg/lazy/go/lc2547_2.go"
+            ```
+
+    ??? tip "进阶：使用线段树优化"
+        上述两种方法的时间复杂度都是：$O(n^2)$ ，如果数据范围扩大为 $1≤n≤1e6$ 。<br>
+        采用上述方法将会超出时间限制，可以通过线段树进行优化，时间复杂度：$O(n log n)$ 。
+
+        基于方法二，使用线段树维护 $j$ 在 $[0, i]$ 区间内的 $f'_j - unique_{j,i}$ 的最小值。<br>
+        其中 $unique_{j,i}$ 与 $i$ 有关，从左至右计算至 $x = nums[i]$ 时：<br>
+        记 $x = nums[i]$ 上一次出现的位置为 $pre_x$ ，上上一次出现的位置为 $pre2_x$ ，则：
+
+        - $j$ 在 $[pre_x+1, i]$ 区间的 $unique_{j,i}$ 都要加一；
+        - 如果 $x$ 不是首次出现，$j$ 在 $[pre2_x+1, pre_x]$ 区间的 $unique_{j,i}$ 都要减一，相当于把之前的加一撤销。
+
+        通过线段树区间更新即可实现。
+
+        === "Go"
+            ```go
+            --8<-- "seg/lazy/go/lc2547_3.go"
+            ```

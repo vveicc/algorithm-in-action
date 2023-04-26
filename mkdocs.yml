@@ -48,6 +48,7 @@ nav:
   - 字符串:
     - 字符串分割: string/split.md
     - 回文字符串: string/palindrome.md
+    - 后缀数组: string/suffix-array.md
   - 数学:
     - 位运算: math/bit.md
     - 二进制集合操作: math/binary-set.md

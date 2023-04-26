@@ -162,3 +162,24 @@
         ```java
         --8<-- "enumerate/java/cf1181c/Main.java"
         ```
+
+## LC2552. 统计上升四元组
+
+???+ note "问题描述"
+    给你一个长度为 `4≤n≤4e3` 下标从 `0` 开始的整数数组 `nums` ，其中包含 `1` 到 `n` 的 **所有** 数字。<br>
+    如果一个四元组 `(i, j, k, l)` 满足以下条件，我们称它是上升的：
+
+    - `0 <= i < j < k < l < n` 且
+    - `nums[i] < nums[k] < nums[j] < nums[l]` 。
+
+    请你返回上升四元组的数目。
+
+    在 [LeetCode主站](https://leetcode.com/problems/count-increasing-quadruplets "Hard")
+    或 [力扣中文社区](https://leetcode.cn/problems/count-increasing-quadruplets "困难：2433") 查看该题。
+
+??? info "解题思路"
+
+    === "Go"
+        ```go
+        --8<-- "enumerate/go/lc2552.go"
+        ```

@@ -42,6 +42,50 @@
         --8<-- "greedy/go/lc1605.go"
         ```
 
+## LC2551. 将珠子放入背包中
+
+???+ note "问题描述"
+    给你一个长度为 `1≤n≤1e5` 的整数数组 `weights` ，其中 `1≤weights[i]≤1e9` 是第 `i` 个珠子的重量。<br>
+    同时给你一个整数 `k(1≤k≤n)` ，请你按照如下规则将所有的珠子放进 `k` 个背包：
+
+    - 没有背包是空的。
+    - 如果第 `i` 个珠子和第 `j` 个珠子在同一个背包里，那么 `[i, j]` 区间的所有珠子都必须在这个背包中。
+    - 如果一个背包有 `[i, j]` 区间的所有珠子，那么这个背包的价格是 `weights[i] + weights[j]` 。
+
+    一个珠子分配方案的 **分数** 是所有 `k` 个背包的价格之和。<br>
+    请你返回所有分配方案中，**最大分数** 与 **最小分数** 的 **差值** 为多少。
+
+    在 [LeetCode主站](https://leetcode.com/problems/put-marbles-in-bags "Hard")
+    或 [力扣中文社区](https://leetcode.cn/problems/put-marbles-in-bags "困难：2042") 查看该题。
+
+??? info "解题思路"
+    === "Go"
+        ```go
+        --8<-- "greedy/go/lc2551.go"
+        ```
+
+## LC2561. 重排水果
+
+???+ note "问题描述"
+    你有两个果篮，每个果篮中有 `1≤n≤1e5` 个水果。<br>
+    给你两个整数数组 `basket1` 和 `basket2` ，表示两个果篮中每个水果的成本，范围：`[1, 1e9]` 。<br>
+    你希望两个果篮相等。为此，可以根据需要多次执行下述操作：
+
+    - 选中两个下标 `i` 和 `j` ，并交换 `basket1` 中的第 `i` 个水果和 `basket2` 中的第 `j` 个水果。
+    - 交换的成本是 `min(basket1[i], basket2[j])` 。
+
+    根据果篮中水果的成本进行排序，如果排序后结果完全相同，则认为两个果篮相等。<br>
+    返回使两个果篮相等的最小交换成本，如果无法使两个果篮相等，则返回 `-1` 。
+
+    在 [LeetCode主站](https://leetcode.com/problems/rearranging-fruits "Hard")
+    或 [力扣中文社区](https://leetcode.cn/problems/rearranging-fruits "困难：2222") 查看该题。
+
+??? info "解题思路"
+    === "Go"
+        ```go
+        --8<-- "greedy/go/lc2561.go"
+        ```
+
 ## CF1054D. Changing Array
 
 ???+ note "问题描述"
