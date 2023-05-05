@@ -142,3 +142,30 @@ $$B_{i,j} = A_{i,j} - A_{i-1,j} - A_{i,j-1} + A_{i-1,j-1}$$
         ```go
         --8<-- "prefix-sum/diff/go/lg3397_2.go"
         ```
+
+#### LC2132. 用邮票贴满网格图
+
+???+ note "问题描述"
+    给你一个 `m x n` 的二进制矩阵 `grid` ，每个格子要么为 `0` （空）要么为 `1`（被占据）。<br>
+    给你邮票的尺寸为 `stampHeight x stampWidth` 。`1≤m,n,stampHeight,stampWidth≤1e5` 且 `1≤m*n≤2e5` 。<br>
+    我们想将邮票贴进二进制矩阵中，且满足以下 **限制** 和 **要求** ：
+
+    1. 覆盖所有 **空** 格子。
+    2. 不覆盖任何 **被占据** 的格子。
+    3. 我们可以放入任意数目的邮票。
+    4. 邮票可以相互有 **重叠** 部分。
+    5. 邮票不允许 **旋转** 。
+    6. 邮票必须完全在矩阵 **内** 。
+
+    如果在满足上述要求的前提下，可以放入邮票，请返回 `true` ，否则返回 `false` 。
+
+    在 [LeetCode主站](https://leetcode.com/problems/stamping-the-grid "Hard")
+    或 [力扣中文社区](https://leetcode.cn/problems/stamping-the-grid "困难：2364") 查看该题。
+
+??? info "解题思路"
+    **方法一：二维前缀和 + 二维差分**
+
+    === "Go"
+        ```go
+        --8<-- "prefix-sum/diff/go/lc2132.go"
+        ```

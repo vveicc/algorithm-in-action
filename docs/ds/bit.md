@@ -47,3 +47,22 @@
         ```go
         --8<-- "bit/go/lc1626_2.go"
         ```
+
+## LC2659. 将数组清空
+
+???+ note "问题描述"
+    给你一个包含若干 **互不相同** 整数的数组 nums ，你需要执行以下操作 **直到数组为空** ：
+
+    - 如果数组中第一个元素是当前数组中的 **最小值** ，则删除它。
+    - 否则，将第一个元素移动到数组的 **末尾** 。
+    
+    请你返回需要多少次操作使 nums 为空。
+
+    在 [LeetCode主站](https://leetcode.com/problems/make-array-empty "Hard")
+    或 [力扣中文社区](https://leetcode.cn/problems/make-array-empty "困难：2282") 查看该题。
+
+??? info "解题思路"
+    === "Go"
+        ```go
+        --8<-- "bit/go/lc2659.go"
+        ```
