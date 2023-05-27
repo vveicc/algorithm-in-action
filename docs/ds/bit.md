@@ -55,7 +55,7 @@
 
     - 如果数组中第一个元素是当前数组中的 **最小值** ，则删除它。
     - 否则，将第一个元素移动到数组的 **末尾** 。
-    
+
     请你返回需要多少次操作使 nums 为空。
 
     在 [LeetCode主站](https://leetcode.com/problems/make-array-empty "Hard")

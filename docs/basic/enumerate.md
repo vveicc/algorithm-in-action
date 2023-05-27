@@ -183,3 +183,68 @@
         ```go
         --8<-- "enumerate/go/lc2552.go"
         ```
+
+## LC1330. 翻转子数组得到最大的数组值 { data-toc-label='LC1330. 翻转子数组得到最大...' }
+
+???+ note "问题描述"
+    给你一个长度为 `1≤n≤3e4` 的整数数组 `nums` ，`-1e5≤nums[i]≤1e5` 。<br>
+    **数组值** 定义为所有满足 `0≤i<n-1` 的 `|nums[i]-nums[i+1]|` 的和。<br>
+    你可以选择给定数组的任意子数组，并将该子数组翻转。但你只能执行这个操作 **一次** 。<br>
+    请你计算可以得到的最大 **数组值** 。
+
+    在 [LeetCode主站](https://leetcode.com/problems/reverse-subarray-to-maximize-array-value "Hard")
+    或 [力扣中文社区](https://leetcode.cn/problems/reverse-subarray-to-maximize-array-value "困难：2482") 查看该题。
+
+??? info "解题思路"
+    翻转 $nums[i..j]$ ，先不考虑边界情况，记 $a=nums[i-1], b=nums[i], c=nums[j], d=nums[j+1]$ 。<br>
+    很明显，翻转后数组值的变化量为 $x = |a-c| + |b-d| - |a-b| - |c-d|$ ，问题转化为将 $x$ 最大化。
+
+    根据 $a,b,c,d$ 的大小关系，共有 $4! = 24$ 种情况，下面分情况讨论：
+    
+    **第 1 类** $\max(a,b) ≤ \min(c,d)$
+    
+    $$
+    \begin{align*}
+        x &= |a-c| + |b-d| - |a-b| - |c-d| \\
+          &= (c-a) + (d-b) - |a-b| - |c-d| \\
+          &= (c+d-|c-d|) - (a+b+|a-b|) \\
+          &= 2 \times (\min(c,d) - \max(a,b)) ≥ 0
+    \end{align*}
+    $$
+
+    根据对称性，$\max(c,d) ≤ \min(a,b)$ 时，也有 $x = 2 \times (\min(a,b) - \max(c,d)) ≥ 0$ 。
+
+    **第 2 类** $\max(a,c) ≤ \min(b,d)$
+
+    $$
+    \begin{align*}
+        x &= |a-c| + |b-d| - |a-b| - |c-d| \\
+          &= |a-c| + |b-d| - (b-a) - (d-c) \\
+          &= (a+c+|a-c|) - (b+d-|b-d|) \\
+          &= 2 \times (\max(a,c) - \min(b,d)) ≤ 0
+    \end{align*}
+    $$
+
+    根据对称性，$\max(b,d) ≤ \min(a,c)$ 时，也有 $x = 2 \times (\max(b,d) - \min(a,c)) ≤ 0$ 。
+
+    **第 3 类** $\max(a,d) ≤ \min(b,c)$
+
+    $$
+    \begin{align*}
+        x &= |a-c| + |b-d| - |a-b| - |c-d| \\
+          &= (c-a) + (b-d) - (b-a) - (c-d) = 0
+    \end{align*}
+    $$
+
+    根据对称性，$\max(b,d) ≤ \min(a,c)$ 时，也有 $x = 0$ 。
+
+    综合以上三类情况，仅第 1 类会使数组值变大，此时
+
+    $$\max x = 2 \times (\max_{i=0}^{n-1}\{\min(nums[i],nums[i+1])\} - \min_{j=0}^{n-1}\{\max(nums[j],nums[j+1])\})$$
+
+    实现时注意处理边界情况。
+
+    === "Go"
+        ```go
+        --8<-- "enumerate/go/lc1330.go"
+        ```

@@ -51,6 +51,8 @@ nav:
     - 字符串分割: string/split.md
     - 回文字符串: string/palindrome.md
     - 后缀数组: string/suffix-array.md
+  - 数组:
+    - 子数组运算模板: array/subarray.md
   - 数学:
     - 位运算: math/bit.md
     - 二进制集合操作: math/binary-set.md
@@ -178,7 +180,7 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - pymdownx.snippets:
-      base_path: ['code/basic', 'code/ds', 'code/dp', 'code/string', 'code/math', 'code/graph']
+      base_path: ['code/basic', 'code/ds', 'code/dp', 'code/string', 'code/array', 'code/math', 'code/graph']
 
 # Customization
 extra:

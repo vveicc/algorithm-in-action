@@ -1,4 +1,4 @@
-# 关于本站
+# 简介
 
 ## 欢迎来到 **Algorithm in Action** !
 
